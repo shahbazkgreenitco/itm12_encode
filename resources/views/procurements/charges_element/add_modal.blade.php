@@ -1,0 +1,198 @@
+<div class="amg-modal amg-form-modal modal fade" id="charges_element_modal" tabindex="-1"
+    aria-labelledby="charges_element_modal_title" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <form id="charges_element_frm" name="charges_element_frm" method="post" action="#"
+            enctype="multipart/form-data" class="form-horizontal w-100 amg-form-theme" autocomplete="off"
+            onsubmit="return false;">
+
+            <div class="modal-content rounded-5">
+
+                {{-- Modal Header --}}
+                <div class="modal-header d-flex align-items-center py-3 pt-4">
+
+                    <h3 class="modal-title px-4" id="charges_element_modal_title">
+                        {{ trans('content.custom_charges.add_charges_element') }}
+                    </h3>
+
+                    <button type="button" data-bs-dismiss="modal" class="modal-close px-4" aria-label="Close">
+
+                        <svg class="amg-modal-close-icon" viewBox="0 0 31 31" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+
+                            <path
+                                d="M21.0277 11.5277L17.1163 15.4375L21.0277 19.3473C21.138 19.4577 21.2255 19.5887 21.2852 19.7328C21.3449 19.877 21.3757 20.0315 21.3757 20.1875C21.3757 20.3435 21.3449 20.498 21.2852 20.6422C21.2255 20.7863 21.138 20.9173 21.0277 21.0277C20.9173 21.138 20.7864 21.2255 20.6422 21.2852C20.498 21.3449 20.3435 21.3757 20.1875 21.3757C20.0315 21.3757 19.877 21.3449 19.7328 21.2852C19.5887 21.2255 19.4577 21.138 19.3473 21.0277L15.4375 17.1163L11.5277 21.0277C11.4173 21.138 11.2864 21.2257 11.1422 21.2854C10.998 21.3451 10.8435 21.3758 10.6875 21.3758C10.5315 21.3758 10.377 21.3451 10.2328 21.2854C10.0886 21.2257 9.95768 21.138 9.84735 21.0277C9.73702 20.9173 9.6495 20.7863 9.58979 20.6422C9.53008 20.498 9.49935 20.3435 9.49935 20.1875C9.49935 20.0315 9.53008 19.877 9.58979 19.7328C9.6495 19.5887 9.73702 19.4577 9.84735 19.3473L13.7587 15.4375L9.84735 11.5277C9.62453 11.3048 9.49935 11.0026 9.49935 10.6875C9.49935 10.3724 9.62453 10.0702 9.84735 9.84734C10.0702 9.62452 10.3724 9.49934 10.6875 9.49934C11.0026 9.49934 11.3048 9.62452 11.5277 9.84734L15.4375 13.7587L19.3473 9.84734C19.4577 9.73701 19.5887 9.64949 19.7328 9.58978C19.877 9.53007 20.0315 9.49934 20.1875 9.49934C20.3435 9.49934 20.498 9.53007 20.6422 9.58978C20.7864 9.64949 20.9173 9.73701 21.0277 9.84734C21.138 9.95767 21.2255 10.0887 21.2852 10.2328C21.3449 10.377 21.3757 10.5315 21.3757 10.6875C21.3757 10.8435 21.3449 10.998 21.2852 11.1422C21.2255 11.2863 21.138 11.4173 21.0277 11.5277Z"
+                                fill="currentColor" />
+
+                            <path
+                                d="M15.4375 0C6.911 0 0 6.911 0 15.4375C0 23.964 6.911 30.875 15.4375 30.875C23.964 30.875 30.875 23.964 30.875 15.4375C30.875 6.911 23.964 0 15.4375 0ZM15.4375 28.5C8.2205 28.5 2.375 22.6545 2.375 15.4375C2.375 8.2205 8.2205 2.375 15.4375 2.375C22.6545 2.375 28.5 8.2205 28.5 15.4375C28.5 22.6545 22.6545 28.5 15.4375 28.5Z"
+                                fill="currentColor" />
+
+                        </svg>
+                    </button>
+
+                </div>
+
+                {{-- Modal Body --}}
+                <div class="modal-body">
+
+                    <div class="container-fluid py-3">
+
+                        <div class="row g-4 px-4">
+
+                            {{-- Title --}}
+                            <div class="col-md-12">
+
+                                <div class="amg-form-field amg-form-field-row">
+
+                                    <label for="title" class="form-label b1-text required">
+                                        {{ trans('content.custom_charges.title') }}
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <span class="input-group-text">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </span>
+
+                                        <input type="text" name="title" id="title" class="form-control"
+                                            placeholder="{{ trans('content.custom_charges.enter_the_title') }}">
+
+                                    </div>
+
+                                    <div class="amg-form-error-wrap"></div>
+
+                                </div>
+
+                            </div>
+
+                            {{-- Description --}}
+                            <div class="col-md-12">
+
+                                <div class="amg-form-field amg-form-field-row">
+
+                                    <label for="description" class="form-label b1-text">
+                                        {{ trans('content.custom_charges.description') }}
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <span class="input-group-text">
+                                            <i class="bi bi-journal-text"></i>
+                                        </span>
+
+                                        <textarea name="description" id="description" class="form-control" rows="4" style="resize: vertical;"></textarea>
+
+                                    </div>
+
+                                    <div class="amg-form-error-wrap"></div>
+
+                                </div>
+
+                            </div>
+
+                            {{-- Status --}}
+                            <div class="col-md-12">
+
+                                <div class="amg-form-field amg-form-field-row">
+
+                                    <label for="status" class="form-label b1-text required">
+                                        {{ trans('content.custom_charges.status') }}
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <span class="input-group-text">
+                                            <i class="bi bi-check2-circle"></i>
+                                        </span>
+
+                                        <select name="status" id="status" class="form-select">
+
+                                            <option value="1">
+                                                {{ trans('content.custom_charges.enabled') }}
+                                            </option>
+
+                                            <option value="0">
+                                                {{ trans('content.custom_charges.disabled') }}
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+                                    <div class="amg-form-error-wrap"></div>
+
+                                </div>
+
+                            </div>
+
+                            {{-- Action --}}
+                            <div class="col-md-12">
+
+                                <div class="amg-form-field amg-form-field-row">
+
+                                    <label for="action" class="form-label b1-text required">
+                                        {{ trans('content.custom_charges.element_action') }}
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <span class="input-group-text">
+                                            <i class="bi bi-arrow-left-right"></i>
+                                        </span>
+
+                                        <select name="action" id="action" class="form-select">
+
+                                            <option value="1">
+                                                {{ trans('content.custom_charges.add') }}
+                                            </option>
+
+                                            <option value="2">
+                                                {{ trans('content.custom_charges.subtract') }}
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+                                    <div class="amg-form-error-wrap"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                {{-- Footer --}}
+                <div class="amg-form-footer modal-footer d-flex justify-content-end pb-4 py-0">
+
+                    <button type="button" id="btnSubmit"
+                        class="amg-btn amg-btn-primary amg-btn-block col-md-2 amg-btn-md">
+
+                        <i class="bi bi-check-circle me-1"></i>
+                        {{ trans('button.create') }}
+
+                        <span class="spinner-border spinner-border-sm d-none ms-1"
+                            id="charges_element-mdl-loader"></span>
+
+                    </button>
+
+                    <button type="button" data-bs-dismiss="modal"
+                        class="amg-btn amg-btn-ghost bg-black text-white col-md-2 amg-btn-md">
+
+                        <i class="bi bi-x-circle me-1"></i>
+                        {{ trans('button.close') }}
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

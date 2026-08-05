@@ -1,0 +1,52 @@
+<?php
+
+return [
+    'view' => [
+        'id' => "ID",
+        'header' => "Components",
+        'page_heading' => "Component",
+        'download' => "Download",
+        'import_components' => "Import Components",
+        'search' => "Search",
+        'refresh' => "Refresh",
+        'add' => "Add New Components",
+        "show_columns" => "Show Columns",
+        'show' => "Show",
+        'Component' => "Component",
+        'Location' => "Location",
+        'Total' => "Total",
+        'Avail' => "Avail",
+        'scrap' => "Scrap",
+        'threshold' => "Threshold",
+        'purchase_info' => "Purchase Info",
+        'Updated_On' => "Updated On",
+        'actions' => "Actions",
+        'show_deleted_component' => "Show deleted component",
+        'show_non_deleted_components' => "Show non deleted components",
+        'download_pdf' => "Download PDF",
+        'bulk_checkout' => "Bulk Checkout",
+        'bulk_checkin' => "Bulk Checkin",
+    ],
+    'table_headers' => [
+        'tag' => 'Tag',
+        'component_info' => 'Component Info',
+        'status' => 'Status',
+        'checkout_info' => 'Checkout Info',
+        'purchase_cost' => 'Purchase Cost',
+        'origin_info' => 'Origin Info',
+        'status' => 'Status',
+        'updated_on' => 'Updated On',
+        'actions' => 'Actions',
+    ],
+    'component_toolbar' => [
+        'add_component' => 'Add Component',
+        'print_label' => 'Print Label',
+        'show_deleted_component' => 'Show Deleted Component',
+        'show_non_deleted_component' => 'Show Non Deleted Component',
+        'update_bulk_component' => 'Update Bulk Component',
+        'import_component' => 'Import Component',
+        'download_pdf' => 'Download PDF',
+        'download' => 'Download',
+        
+    ]
+];

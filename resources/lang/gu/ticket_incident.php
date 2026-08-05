@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'ticket_incident' => [
+        'title' => 'ટિકિટ ઘટના',
+        'print' => 'પ્રિન્ટ',
+        'subject' => 'વિષય',
+        'company' => 'કંપની',
+        'ticket_id' => 'ટિકિટ આઈડી',
+        'dept_id' => 'અસરગ્રસ્ત વિભાગ',
+        'created_at' => 'દ્વારા બનાવેલ',
+        'priority' => 'પ્રાથમિકતા',
+        'location' => 'સ્થાન',
+        'internal_place' => 'આંતરિક સ્થાન',
+        'problem_category' => 'સમસ્યા શ્રેણી',
+        'sub_category' => 'ઉપ સમસ્યા શ્રેણી',
+        'status' => 'સ્થિતિ',
+        'incident_created_date_time' => 'ઘટના બનાવવાની તારીખ અને સમય',
+        'incident_end_date_time' => 'ઘટના સમાપ્ત થવાની તારીખ અને સમય',
+        'service_impacted' => 'અસરગ્રસ્ત સેવા',
+        'sla_breaches' => 'SLA ઉલ્લંઘનો',
+        'content' => 'વિગતો',
+        'rca' => 'મૂળ કારણ વિશ્લેષણ (RCA)',
+        'why_incident_happen' => 'ઘટના કેમ बनी',
+        'preventive_measure_taken' => 'લિધેલા નિવારક પગલાં',
+        'show' => 'બતાવો',
+        'search' => 'શોધો...',
+        'incident_not_exist'        => 'ઘટના અસ્તિત્વમાં નથી.',
+        'incident_detail_not_exist' => 'ઘટનાની વિગતો અસ્તિત્વમાં નથી.',
+    ],
+];

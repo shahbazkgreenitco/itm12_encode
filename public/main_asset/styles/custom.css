@@ -1,0 +1,104 @@
+/* header */
+
+
+.header-actions-wrapper {
+    background: linear-gradient(90deg, #f2e9ff 0%, #f7ecff 30%, #fdecef 60%, #fff1e6 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 71px;
+    padding-inline: 20px;
+}
+
+.header-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px
+}
+
+.header-action-btn {
+    background-color: none;
+    border: none;
+    outline: none;
+    height: 38px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
+
+.header-action-btn-with-text {
+    background-color: none;
+    border: none;
+    outline: none;
+    height: 38px;
+    padding-inline: 10px;
+    gap: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
+
+.header-action-btn svg,
+.header-action-btn-with-text svg {
+    opacity: .5;
+}
+
+.header-btn-primary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #F12F35;
+    border: none;
+    outline: none;
+    height: 38px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    padding-inline: 25px;
+}
+
+.header-action-btn-with-text span {
+    color: black;
+    opacity: .5;
+}
+
+
+/* ==================== customize tabs ============== */
+.nav-underline .nav-link.active,
+.nav-underline .show>.nav-link {
+    font-weight: 600;
+
+    border-bottom-color: currentcolor;
+    border-bottom-color: red;
+    border-bottom-width: 4px;
+}
+
+.nav-underline .nav-item {
+    padding-inline: 20px;
+    border-right: 1px solid #DFDFE199;
+}
+
+.nav-underline .nav-link {
+    font-size: 14px;
+    opacity: .5;
+    font-weight: 400;
+}
+
+.nav-underline .nav-link.active {
+    opacity: 1;
+    font-weight: 500;
+}
+
+/* .nav-underline {
+    border-block: 1px solid #DFDFE199;
+} */

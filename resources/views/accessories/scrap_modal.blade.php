@@ -1,0 +1,101 @@
+{{-- 
+/**
+------------------------------------------------------------
+File: scrap_modal.blade.php
+Module: Accessories
+ACC/26/05
+------------------------------------------------------------
+Version: 1.0.0
+Author: Safdar Ali
+Page ID: #ACC-014
+Created On: 2026-05-12
+Reviewed By: -
+------------------------------------------------------------
+Purpose:
+Accessories For PDF Export
+
+------------------------------------------------------------
+Change Log:
+[1.0.0] - Initial version
+------------------------------------------------------------
+*/
+--}}
+
+{{-- Accessory Scrap Modal --}}
+<div id="accessory-scrap-mdl"
+    class="amg-modal amg-form-modal modal fade"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <form id="accessory-scrap-mdl-frm"
+            class="w-100 amg-form-theme"
+            method="post">
+            @csrf
+            <input type="hidden" name="id" id="id">
+            <div class="modal-content rounded-5">
+
+                <!-- HEADER -->
+                <div class="modal-header d-flex align-items-center py-3 pt-4">
+                    <h3 class="modal-title px-4">
+                        Scrap Accessory
+                    </h3>
+                    <button type="button"
+                        data-bs-dismiss="modal"
+                        class="modal-close px-4"
+                        aria-label="Close">
+                        <svg class="amg-modal-close-icon"
+                            viewBox="0 0 31 31"
+                            fill="none">
+                            <path
+                                d="M21.0277 11.5277L17.1163 15.4375L21.0277 19.3473C21.138 19.4577 21.2255 19.5887 21.2852 19.7328C21.3449 19.877 21.3757 20.0315 21.3757 20.1875C21.3757 20.3435 21.3449 20.498 21.2852 20.6422C21.2255 20.7863 21.138 20.9173 21.0277 21.0277C20.9173 21.138 20.7864 21.2255 20.6422 21.2852C20.498 21.3449 20.3435 21.3757 20.1875 21.3757C20.0315 21.3757 19.877 21.3449 19.7328 21.2852C19.5887 21.2255 19.4577 21.138 19.3473 21.0277L15.4375 17.1163L11.5277 21.0277C11.4173 21.138 11.2864 21.2255 11.1422 21.2852C10.998 21.3449 10.8435 21.3757 10.6875 21.3757C10.5315 21.3757 10.377 21.3449 10.2328 21.2852C10.0887 21.2255 9.95768 21.138 9.84735 21.0277C9.73702 20.9173 9.6495 20.7863 9.58979 20.6422C9.53008 20.498 9.49935 20.3435 9.49935 20.1875C9.49935 20.0315 9.53008 19.877 9.58979 19.7328C9.6495 19.5887 9.73702 19.4577 9.84735 19.3473L13.7587 15.4375L9.84735 11.5277C9.62453 11.3048 9.49935 11.0026 9.49935 10.6875C9.49935 10.3724 9.62453 10.0702 9.84735 9.84734C10.0702 9.62452 10.3724 9.49934 10.6875 9.49934C11.0026 9.49934 11.3048 9.62452 11.5277 9.84734L15.4375 13.7587L19.3473 9.84734C19.4577 9.73701 19.5887 9.64949 19.7328 9.58978C19.877 9.53007 20.0315 9.49934 20.1875 9.49934C20.3435 9.49934 20.498 9.53007 20.6422 9.58978C20.7864 9.64949 20.9173 9.73701 21.0277 9.84734C21.138 9.95767 21.2255 10.0887 21.2852 10.2328C21.3449 10.377 21.3757 10.5315 21.3757 10.6875C21.3757 10.8435 21.3449 10.998 21.2852 11.1422C21.2255 11.2863 21.138 11.4173 21.0277 11.5277Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- BODY -->
+                <div class="modal-body bg-white px-4 py-4">
+
+                    <!-- Quantity -->
+                    <div class="mb-4">
+                        <div class="amg-form-field amg-form-field-row">
+                            <label class="form-label me-2 mb-0 text-end required">
+                                Enter Quantity
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-123"></i>
+                                </span>
+                                <input type="number"
+                                    name="scrap_qty"
+                                    id="scrap_qty"
+                                    class="form-control"
+                                    min="1"
+                                    step="1"
+                                    placeholder="Enter Quantity">
+                            </div>
+                            <div class="amg-form-error-wrap"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOOTER -->
+                <div class="modal-footer px-4 pb-4">
+                    <button type="button"
+                        id="btnSubmit"
+                        class="amg-btn amg-btn-primary">
+
+                        {{ trans('accessories.accessory_fields.save') }}
+                    </button>
+
+                    <button type="button"
+                        class="amg-btn amg-btn-secondary"
+                        data-bs-dismiss="modal">
+                        {{ trans('accessories.accessory_fields.close') }}
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

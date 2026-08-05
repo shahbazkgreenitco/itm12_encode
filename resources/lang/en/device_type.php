@@ -1,0 +1,58 @@
+<?php
+
+return [
+    'view' => [
+        'header' => 'Device Type',
+        'page_heading' => 'Device Type',
+        'search' => 'Search',
+        'refresh' => 'Refresh',
+        'refresh_list' => 'Refresh List',
+        'add' => 'Add',
+        'show_columns' => 'Show Columns',
+        'show' => 'Show',
+        'download' => 'Download',
+        'add_button' => 'Add Device Type',
+    ],
+    'config' => [
+        'refresh_list' => 'Refresh List',
+        'search' => 'Search',
+        'please_enter_valid_search' => 'Please enter valid search term',
+        'edit' => 'Edit',
+        'delete' => 'Delete',
+        'add_device' => 'Add Device Type',
+        'edit_device' => 'Edit Device Type',
+        'something_went_wrong_details' => 'Something went wrong. Please check given details are correct',
+        'something_went_wrong_some_time' => 'Something went wrong. Please try after sometime.',
+        'save' => 'Save',
+        'save_changes' => 'Save Changes',
+        'confirm_delete' => 'Are you sure to delete the Device Type?',
+    ],
+    'table' => [
+        'id' => 'ID',
+        'device_type' => 'Device Type',
+        'actions' => 'Actions',
+    ],
+    'modal' => [
+        'add_device_type_header' => 'Add Device Type',
+        'edit_device_type_header' => 'Edit Device Type',
+        'device_type_name' => 'Device Type',
+        'device_type_name_placeholder' => 'Enter Device Type',
+        'save' => 'Save',
+        'close' => 'Close',
+    ],
+    'controller' => [
+        'permission_denied' => 'Permission denied',
+        'unable_to_add' => 'Unable to add the Device Type',
+        'add_success' => 'Device Type has been created successfully!',
+        'add_failed' => 'Failed to save the device type.',
+        'unable_to_get' => 'Unable to get the Device Type',
+        'unable_to_delete' => 'Unable to delete the Device Type',
+        'delete_success' => 'Device Type has been deleted successfully!',
+        'unable_to_edit' => 'Unable to edit the device type',
+        'not_found' => 'Device Type not found',
+        'edit_success' => 'Device Type has been updated successfully!',
+        'update_error' => 'An error occurred while updating the device type',
+        'already_deleted' => "Device Type is already deleted",
+        'device_type_not_found' => "Unable to get the Device Type"
+    ],
+];

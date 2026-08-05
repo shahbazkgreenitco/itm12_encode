@@ -1,0 +1,850 @@
+/* =================================================== TYPOGRAPHY SYSTEM =================================================== */
+/* Based on Inter Font Family */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ================= TYPOGRAPHY VARIABLES ================= */
+:root {
+    /* Font Family */
+    --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Font Weights */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* Font Sizes */
+    --font-size-h1: 28px;
+    --font-size-h2: 24px;
+    --font-size-h3: 20px;
+    --font-size-s1: 18px;
+    --font-size-s2: 16px;
+    --font-size-b1: 16px;
+    --font-size-b2: 16px;
+    --font-size-b3: 14px;
+    --font-size-b4: 14px;
+
+    /* Line Heights */
+    --line-height-h1: 34px;
+    --line-height-h2: 28px;
+    --line-height-h3: 28px;
+    --line-height-s1: 28px;
+    --line-height-s2: 24px;
+    --line-height-b1: 24px;
+    --line-height-b2: 24px;
+    --line-height-b3: 20px;
+    --line-height-b4: 20px;
+}
+
+/* ================= BASE TYPOGRAPHY ================= */
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-b1);
+    font-weight: var(--font-regular);
+    line-height: var(--line-height-b1);
+}
+
+/* ================= HEADINGS ================= */
+
+/* H1. Headline */
+h1,
+.h1,
+.h1-headline {
+    font-family: var(--font-primary);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1);
+    margin: 0;
+}
+
+/* H2. Headline (Page Title) */
+h2,
+.h2,
+.h2-headline,
+.page-title {
+    font-family: var(--font-primary);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-h2);
+    margin: 0;
+}
+
+/* H3. Headline */
+h3,
+.h3,
+.h3-headline {
+    font-family: var(--font-primary);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3);
+    margin: 0;
+}
+
+/* ================= SUBTITLES ================= */
+
+/* S1. Subtitle (Secondary Menu) */
+.s1,
+.s1-subtitle,
+.subtitle-secondary {
+    font-family: var(--font-primary);
+    font-weight: var(--font-regular);
+    font-size: var(--font-size-s1);
+    line-height: var(--line-height-s1);
+    margin: 0;
+}
+
+/* S2. Subtitle (Primary Menu) */
+.s2,
+.s2-subtitle,
+.subtitle-primary {
+    font-family: var(--font-primary);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--font-size-s2);
+    line-height: var(--line-height-s2);
+    margin: 0;
+}
+
+/* ================= BODY TEXT ================= */
+
+/* B1. Body (Primary) */
+p,
+.b1,
+.b1-body,
+.body-primary {
+    font-family: var(--font-primary);
+    font-weight: var(--font-regular);
+    font-size: var(--font-size-b1);
+    line-height: var(--line-height-b1);
+    margin: 0;
+}
+
+/* B2. Body */
+.b2,
+.b2-body {
+    font-family: var(--font-primary);
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-b2);
+    line-height: var(--line-height-b2);
+    margin: 0;
+}
+
+/* B3. Body */
+.b3,
+.b3-body {
+    font-family: var(--font-primary);
+    font-weight: var(--font-regular);
+    font-size: var(--font-size-b3);
+    line-height: var(--line-height-b3);
+    margin: 0;
+}
+
+/* B4. Body */
+.b4,
+.b4-body {
+    font-family: var(--font-primary);
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-b4);
+    line-height: var(--line-height-b4);
+    margin: 0;
+}
+
+/* ================= UTILITY CLASSES ================= */
+
+/* Font Weights */
+.font-regular {
+    font-weight: var(--font-regular);
+}
+
+.font-medium {
+    font-weight: var(--font-medium);
+}
+
+.font-semi-bold {
+    font-weight: var(--font-semi-bold);
+}
+
+.font-bold {
+    font-weight: var(--font-bold);
+}
+
+/* Text Alignment */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Text Transform */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+/* Letter Spacing */
+.letter-spacing-tight {
+    letter-spacing: -0.02em;
+}
+
+.letter-spacing-normal {
+    letter-spacing: 0;
+}
+
+.letter-spacing-wide {
+    letter-spacing: 0.02em;
+}
+
+/* Text Decoration */
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-no-underline {
+    text-decoration: none;
+}
+
+/* Text Overflow */
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Line Clamp (Multi-line truncation) */
+.line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* White Space */
+.whitespace-normal {
+    white-space: normal;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+.whitespace-pre {
+    white-space: pre;
+}
+
+.whitespace-pre-line {
+    white-space: pre-line;
+}
+
+.whitespace-pre-wrap {
+    white-space: pre-wrap;
+}
+
+
+/* =================================================== COLOR SYSTEM =================================================== */
+
+:root {
+    /* ================= BRAND COLORS ================= */
+    --color-primary: #FF2F35;
+    --color-secondary: #001B51;
+    --color-primary-text: #000000;
+    --color-secondary-text: #7F7F7F;
+    --color-tab-inactive: #7F7F7F;
+    --color-outline: #EBEBEB;
+    --color-surface: #F8FAFD;
+    --color-white: #FFFFFF;
+
+    /* ================= STATUS COLORS ================= */
+    --status-open: #006FFD;
+    --status-in-progress: #EE7C27;
+    --status-on-hold: #6E6E6E;
+
+    /* ================= PRIORITY COLORS ================= */
+    --priority-critical: #F73019;
+    --priority-high: #F2071B;
+    --priority-medium: #F3AE2C;
+    --priority-low-2: #19AC53;
+    --priority-low: #AEE387;
+
+    /* ================= SLA TIMING COLORS ================= */
+    --sla-active: #01BE86;
+    --sla-about-to-reach: #F78F2A;
+    --sla-breached: #B81F24;
+
+    /* ================= NOTIFICATION COLORS ================= */
+    --notification-new-ticket: #C4E8FE;
+    --notification-user-updated: #F8E8E8;
+    --notification-vip-ticket: #FCDBE6;
+    --notification-handler: #D7DAF9;
+    --notification-third-party: #EAEAEA;
+    --notification-escalated: #FDE9E9;
+    --notification-reassigned: #F4C3C9;
+    --notification-breached: #CFD7DC;
+
+    /* ================= TEXT COLORS (from typography spec) ================= */
+    --text-h1-headline: #000000;
+    --text-h2-page-title: #000000;
+    --text-h3-headline: #000000;
+    --text-b1-body-primary: #000000;
+    --text-muted: #6b7280;
+    --text-light: #9ca3af;
+}
+
+/* ================= BRAND COLOR CLASSES ================= */
+
+/* Primary */
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.border-primary {
+    border-color: var(--color-primary);
+}
+
+/* Secondary */
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.border-secondary {
+    border-color: var(--color-secondary);
+}
+
+/* Primary Text */
+.bg-primary-text {
+    background-color: var(--color-primary-text);
+}
+
+.text-primary-text {
+    color: var(--color-primary-text);
+}
+
+.border-primary-text {
+    border-color: var(--color-primary-text);
+}
+
+/* Secondary Text */
+.bg-secondary-text {
+    background-color: var(--color-secondary-text);
+}
+
+.text-secondary-text {
+    color: var(--color-secondary-text);
+}
+
+.border-secondary-text {
+    border-color: var(--color-secondary-text);
+}
+
+/* Tab Inactive */
+.bg-tab-inactive {
+    background-color: var(--color-tab-inactive);
+}
+
+.text-tab-inactive {
+    color: var(--color-tab-inactive);
+}
+
+.border-tab-inactive {
+    border-color: var(--color-tab-inactive);
+}
+
+/* Outline */
+.bg-outline {
+    background-color: var(--color-outline);
+}
+
+.text-outline {
+    color: var(--color-outline);
+}
+
+.border-outline {
+    border-color: var(--color-outline);
+}
+
+/* Surface */
+.bg-surface {
+    background-color: var(--color-surface);
+}
+
+.text-surface {
+    color: var(--color-surface);
+}
+
+.border-surface {
+    border-color: var(--color-surface);
+}
+
+/* White */
+.bg-white {
+    background-color: var(--color-white);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.border-white {
+    border-color: var(--color-white);
+}
+
+/* ================= STATUS COLOR CLASSES ================= */
+
+/* Open */
+.bg-status-open {
+    background-color: var(--status-open);
+}
+
+.text-status-open {
+    color: var(--status-open);
+}
+
+.border-status-open {
+    border-color: var(--status-open);
+}
+
+/* In Progress */
+.bg-status-in-progress {
+    background-color: var(--status-in-progress);
+}
+
+.text-status-in-progress {
+    color: var(--status-in-progress);
+}
+
+.border-status-in-progress {
+    border-color: var(--status-in-progress);
+}
+
+/* On Hold */
+.bg-status-on-hold {
+    background-color: var(--status-on-hold);
+}
+
+.text-status-on-hold {
+    color: var(--status-on-hold);
+}
+
+.border-status-on-hold {
+    border-color: var(--status-on-hold);
+}
+
+/* ================= PRIORITY COLOR CLASSES ================= */
+
+/* Critical */
+.bg-priority-critical {
+    background-color: var(--priority-critical);
+}
+
+.text-priority-critical {
+    color: var(--priority-critical);
+}
+
+.border-priority-critical {
+    border-color: var(--priority-critical);
+}
+
+/* High */
+.bg-priority-high {
+    background-color: var(--priority-high);
+}
+
+.text-priority-high {
+    color: var(--priority-high);
+}
+
+.border-priority-high {
+    border-color: var(--priority-high);
+}
+
+/* Medium */
+.bg-priority-medium {
+    background-color: var(--priority-medium);
+}
+
+.text-priority-medium {
+    color: var(--priority-medium);
+}
+
+.border-priority-medium {
+    border-color: var(--priority-medium);
+}
+
+/* Low 2 */
+.bg-priority-low-2 {
+    background-color: var(--priority-low-2);
+}
+
+.text-priority-low-2 {
+    color: var(--priority-low-2);
+}
+
+.border-priority-low-2 {
+    border-color: var(--priority-low-2);
+}
+
+/* Low */
+.bg-priority-low {
+    background-color: var(--priority-low);
+}
+
+.text-priority-low {
+    color: var(--priority-low);
+}
+
+.border-priority-low {
+    border-color: var(--priority-low);
+}
+
+/* ================= SLA TIMING COLOR CLASSES ================= */
+
+/* SLA */
+.bg-sla-active {
+    background-color: var(--sla-active);
+}
+
+.text-sla-active {
+    color: var(--sla-active);
+}
+
+.border-sla-active {
+    border-color: var(--sla-active);
+}
+
+/* About to Reach */
+.bg-sla-about-to-reach {
+    background-color: var(--sla-about-to-reach);
+}
+
+.text-sla-about-to-reach {
+    color: var(--sla-about-to-reach);
+}
+
+.border-sla-about-to-reach {
+    border-color: var(--sla-about-to-reach);
+}
+
+/* Breached */
+.bg-sla-breached {
+    background-color: var(--sla-breached);
+}
+
+.text-sla-breached {
+    color: var(--sla-breached);
+}
+
+.border-sla-breached {
+    border-color: var(--sla-breached);
+}
+
+/* ================= NOTIFICATION COLOR CLASSES ================= */
+
+/* New Ticket */
+.bg-notification-new-ticket {
+    background-color: var(--notification-new-ticket);
+}
+
+.text-notification-new-ticket {
+    color: var(--notification-new-ticket);
+}
+
+.border-notification-new-ticket {
+    border-color: var(--notification-new-ticket);
+}
+
+/* User Updated */
+.bg-notification-user-updated {
+    background-color: var(--notification-user-updated);
+}
+
+.text-notification-user-updated {
+    color: var(--notification-user-updated);
+}
+
+.border-notification-user-updated {
+    border-color: var(--notification-user-updated);
+}
+
+/* VIP Ticket */
+.bg-notification-vip-ticket {
+    background-color: var(--notification-vip-ticket);
+}
+
+.text-notification-vip-ticket {
+    color: var(--notification-vip-ticket);
+}
+
+.border-notification-vip-ticket {
+    border-color: var(--notification-vip-ticket);
+}
+
+/* Handler */
+.bg-notification-handler {
+    background-color: var(--notification-handler);
+}
+
+.text-notification-handler {
+    color: var(--notification-handler);
+}
+
+.border-notification-handler {
+    border-color: var(--notification-handler);
+}
+
+/* Third Party Updated */
+.bg-notification-third-party {
+    background-color: var(--notification-third-party);
+}
+
+.text-notification-third-party {
+    color: var(--notification-third-party);
+}
+
+.border-notification-third-party {
+    border-color: var(--notification-third-party);
+}
+
+/* Escalated */
+.bg-notification-escalated {
+    background-color: var(--notification-escalated);
+}
+
+.text-notification-escalated {
+    color: var(--notification-escalated);
+}
+
+.border-notification-escalated {
+    border-color: var(--notification-escalated);
+}
+
+/* Reassigned */
+.bg-notification-reassigned {
+    background-color: var(--notification-reassigned);
+}
+
+.text-notification-reassigned {
+    color: var(--notification-reassigned);
+}
+
+.border-notification-reassigned {
+    border-color: var(--notification-reassigned);
+}
+
+/* Breached */
+.bg-notification-breached {
+    background-color: var(--notification-breached);
+}
+
+.text-notification-breached {
+    color: var(--notification-breached);
+}
+
+.border-notification-breached {
+    border-color: var(--notification-breached);
+}
+
+/* ================= UTILITY COLOR CLASSES ================= */
+
+/* Transparent */
+.bg-transparent {
+    background-color: transparent;
+}
+
+.border-transparent {
+    border-color: transparent;
+}
+
+/* Current Color */
+.text-current {
+    color: currentColor;
+}
+
+.border-current {
+    border-color: currentColor;
+}
+
+/* Opacity Utilities */
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-10 {
+    opacity: 0.1;
+}
+
+.opacity-20 {
+    opacity: 0.2;
+}
+
+.opacity-30 {
+    opacity: 0.3;
+}
+
+.opacity-40 {
+    opacity: 0.4;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.opacity-60 {
+    opacity: 0.6;
+}
+
+.opacity-70 {
+    opacity: 0.7;
+}
+
+.opacity-80 {
+    opacity: 0.8;
+}
+
+.opacity-90 {
+    opacity: 0.9;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+/* Hover Opacity (for interactive elements) */
+.hover-opacity-80:hover {
+    opacity: 0.8;
+}
+
+.hover-opacity-90:hover {
+    opacity: 0.9;
+}
+
+.hover-opacity-100:hover {
+    opacity: 1;
+}
+
+/* ================= STATUS BADGES ================= */
+.badge-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.badge-status-open {
+    background-color: rgba(0, 111, 253, 0.1);
+    color: var(--status-open);
+}
+
+.badge-status-in-progress {
+    background-color: rgba(238, 124, 39, 0.1);
+    color: var(--status-in-progress);
+}
+
+.badge-status-on-hold {
+    background-color: rgba(110, 110, 110, 0.1);
+    color: var(--status-on-hold);
+}
+
+/* ================= PRIORITY BADGES ================= */
+.badge-priority {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.badge-priority-critical {
+    background-color: rgba(247, 48, 25, 0.1);
+    color: var(--priority-critical);
+}
+
+.badge-priority-high {
+    background-color: rgba(242, 7, 27, 0.1);
+    color: var(--priority-high);
+}
+
+.badge-priority-medium {
+    background-color: rgba(243, 174, 44, 0.1);
+    color: var(--priority-medium);
+}
+
+.badge-priority-low-2 {
+    background-color: rgba(25, 172, 83, 0.1);
+    color: var(--priority-low-2);
+}
+
+.badge-priority-low {
+    background-color: rgba(174, 227, 135, 0.2);
+    color: #5a8c2f;
+}
+
+/* ================= SLA BADGES ================= */
+.badge-sla {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.badge-sla-active {
+    background-color: rgba(1, 190, 134, 0.1);
+    color: var(--sla-active);
+}
+
+.badge-sla-about-to-reach {
+    background-color: rgba(247, 143, 42, 0.1);
+    color: var(--sla-about-to-reach);
+}
+
+.badge-sla-breached {
+    background-color: rgba(184, 31, 36, 0.1);
+    color: var(--sla-breached);
+}

@@ -1,0 +1,102 @@
+{
+    "status": "success",
+    "msg": "Request details fetched successfully",
+    "data": {
+        "id": 3371,
+        "subject": "Hardware Issue - Battery Issue",
+        "content": "testing Archive service request&nbsp; close date&nbsp;",
+        "creator_id": 727,
+        "assigned_to": null,
+        "priority_id": 3,
+        "status_id": 3,
+        "department_id": 1,
+        "problem_category_id": 5,
+        "sub_category_id": 7,
+        "procure_tag": "SR3371",
+        "location_id": 3,
+        "tat": 1,
+        "pab_id": "{\"16\":1}",
+        "updated_at_format": "01 Apr 2026 05:25 PM",
+        "created_at_format": "01 Apr 2026 05:24 PM",
+        "archived_at_format": "01 Apr 2026 06:39 PM",
+        "approved_day": null,
+        "company_id": 1,
+        "creator": {
+            "id": 727,
+            "name": "KLDemoTech Demo",
+            "username": "KLDemoTech",
+            "avatar": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/uploads\/avatar\/oo8x9dZTRB1SNNjvC2zeCzyH.png"
+        },
+        "assignedUser": null,
+        "priority": {
+            "id": 3,
+            "name": "Medium"
+        },
+        "department": {
+            "id": 1,
+            "name": "IT Support"
+        },
+        "status": {
+            "id": 3,
+            "name": "Approved"
+        },
+        "category": {
+            "id": 5,
+            "name": "Hardware Issue"
+        },
+        "subCategory": {
+            "id": 7,
+            "name": "Battery Issue"
+        },
+        "company": {
+            "id": 1,
+            "name": "Greenitco Technologies"
+        },
+        "rendered_content": "testing Archive service request&nbsp; close date&nbsp;",
+        "attachments": [
+            {
+                "id": 970,
+                "name": "Lorem%20Logo.png",
+                "ext": "png",
+                "thumb": 1,
+                "file_name": "2026\/04\/01\/njTsC8KiIqjJvJOqARBjzCwnu5haGjduweZy0QqD.png",
+                "size": 0
+            }
+        ],
+        "serviceRequest": {
+            "id": 3371,
+            "procure_tag": "SR3371",
+            "form_type": null
+        },
+        "requestedForm": null,
+        "approvals": {
+            "systemApproved": false,
+            "systemApprovedAt": null,
+            "pabs": [
+                {
+                    "id": 16,
+                    "name": "Manager Approvals",
+                    "mode": "Manager Approval",
+                    "approvals": [
+                        {
+                            "id": 688,
+                            "user": {
+                                "id": 694,
+                                "name": "KanchanLonarkarGreenitco",
+                                "avatar": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/uploads\/avatar\/RaDR74d3vyIxv7f6Pkr5nWyz.png"
+                            },
+                            "status": "Approved",
+                            "status_code": 1,
+                            "comment": "Apprvoed",
+                            "approved_days": null,
+                            "date": "01\/04\/2026 05:25 pm",
+                            "delegatedUser": null
+                        }
+                    ],
+                    "systemApproved": false,
+                    "systemApprovedAt": null
+                }
+            ]
+        }
+    }
+}

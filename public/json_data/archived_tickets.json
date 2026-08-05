@@ -1,0 +1,65 @@
+{
+    "total": 1887,
+    "filtered": 1887,
+    "status": "success",
+    "msg": "Archived Ticket get successfully",
+    "page": 1,
+    "lastpage": 189,
+    "data": [
+        {
+            "id": 3568,
+            "subject": "Testing Schedule Ticket",
+            "creator_id": 4502,
+            "assigned_to": 4501,
+            "priority_id": 2,
+            "status_id": 6,
+            "department_id": 1,
+            "problem_category_id": 5,
+            "sub_category_id": 7,
+            "location_id": 7,
+            "tat": 25,
+            "tat_expire_format": "15 Apr 2026 04:00 PM",
+            "created_at_format": "12 Apr 2026 04:30 PM",
+            "created_short": "12 Apr",
+            "taskCount": 2,
+            "assignedUser": {
+                "id": 4501,
+                "name": "anilk superAdmin"
+            },
+            "department": {
+                "id": 1,
+                "name": "IT Support"
+            },
+            "status": {
+                "id": 6,
+                "name": "Closed"
+            }
+        },
+        {
+            "id": 3549,
+            "subject": "ITM - Dashboard",
+            "creator_id": 398,
+            "assigned_to": 356,
+            "priority_id": 2,
+            "status_id": 6,
+            "department_id": 6,
+            "problem_category_id": 304,
+            "sub_category_id": 320,
+            "location_id": 1,
+            "tat": 8,
+            "tat_expire_format": "18 Mar 2026 05:51 PM",
+            "created_at_format": "17 Mar 2026 06:21 PM",
+            "created_short": "17 Mar",
+            "taskCount": 0,
+            "assignedUser": null,
+            "department": {
+                "id": 6,
+                "name": "QA-SDET"
+            },
+            "status": {
+                "id": 6,
+                "name": "Closed"
+            }
+        }
+    ]
+}

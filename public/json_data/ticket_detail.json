@@ -1,0 +1,258 @@
+{
+    "status": "success",
+    "msg": "Ticket details fetched successfully",
+    "data": {
+        "id": 3568,
+        "subject": "Testing Schedule Ticket",
+        "content": "Testing demo person",
+        "creator_id": 4502,
+        "assigned_to": 4501,
+        "priority_id": 2,
+        "status_id": 6,
+        "department_id": 1,
+        "problem_category_id": 5,
+        "sub_category_id": 7,
+        "created_via": 3,
+        "location_id": 7,
+        "created_by": null,
+        "tat": 25,
+        "feedback": 5,
+        "starred": null,
+        "ticket_tag": null,
+        "updated_at_format": "13 Apr 2026 05:20 PM",
+        "created_at_format": "12 Apr 2026 04:30 PM",
+        "tat_expire_format": "15 Apr 2026 04:00 PM",
+        "resolved_at_format": "13 Apr 2026 05:19 PM",
+        "closed_at_format": "14 Apr 2026 12:15 AM",
+        "archived_at_format": "25 Apr 2026 03:00 PM",
+        "tags": null,
+        "creator": {
+            "id": 4502,
+            "name": "anil technician",
+            "username": "anil.technician",
+            "avatar": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/imgs\/profile-75.jpg"
+        },
+        "logger": {
+            "id": 0,
+            "name": "System",
+            "avatar": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/imgs\/profile-75.jpg"
+        },
+        "assignedUser": {
+            "id": 4501,
+            "name": "anilk superAdmin",
+            "username": "anil.superadmin",
+            "avatar": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/imgs\/profile-75.jpg"
+        },
+        "priority": {
+            "id": 2,
+            "name": "High",
+            "tat_hrs": "8"
+        },
+        "department": {
+            "id": 1,
+            "name": "IT Support"
+        },
+        "status": {
+            "id": 6,
+            "name": "Closed"
+        },
+        "category": {
+            "id": 5,
+            "name": "Hardware Issue"
+        },
+        "subCategory": {
+            "id": 7,
+            "name": "Battery Issue"
+        },
+        "location": {
+            "id": 7,
+            "name": "Pune"
+        },
+        "taskCount": 2,
+        "completedTaskCount": 2,
+        "completionPercentage": 100,
+        "rendered_content": "Testing demo person",
+        "attachments": [],
+        "customFieldsFromTableForDepartments": {
+            "_itm_custom_end_date": {
+                "column": "Custom End Date",
+                "value": ""
+            },
+            "_itm_tset_field1": {
+                "column": "Tset Field1",
+                "value": ""
+            },
+            "_itm_test_field2": {
+                "column": "Test Field2",
+                "value": ""
+            },
+            "_itm_logtest": {
+                "column": "Logtest",
+                "value": ""
+            },
+            "_itm_test": {
+                "column": "Test",
+                "value": ""
+            },
+            "_itm_ticket_severity": {
+                "column": "Ticket Severity",
+                "value": ""
+            },
+            "_itm_entry": {
+                "column": "Entry",
+                "value": ""
+            },
+            "_itm_viptickets": {
+                "column": "Viptickets",
+                "value": ""
+            },
+            "_itm_level": {
+                "column": "Level",
+                "value": ""
+            },
+            "_itm_matrix": {
+                "column": "Matrix",
+                "value": ""
+            },
+            "_itm_dropdown": {
+                "column": "Dropdown",
+                "value": ""
+            },
+            "_itm_drpdowntrial": {
+                "column": "Drpdowntrial",
+                "value": ""
+            },
+            "_itm_dd_mj1": {
+                "column": "Dd Mj1",
+                "value": ""
+            },
+            "_itm_dd_mj2": {
+                "column": "Dd Mj2",
+                "value": ""
+            },
+            "_itm_testing_tag": {
+                "column": "Testing Tag",
+                "value": ""
+            },
+            "_itm_testing_numeric": {
+                "column": "Testing Numeric",
+                "value": ""
+            },
+            "_itm_new_field": {
+                "column": "New Field",
+                "value": ""
+            },
+            "_itm_aadhar_no": {
+                "column": "Aadhar No",
+                "value": ""
+            },
+            "_itm_shabby_name": {
+                "column": "Shabby Name",
+                "value": ""
+            },
+            "_itm_shabby_dob": {
+                "column": "Shabby Dob",
+                "value": ""
+            },
+            "_itm_shbby_gender": {
+                "column": "Shbby Gender",
+                "value": ""
+            },
+            "_itm_testavdasvhfvasf": {
+                "column": "Testavdasvhfvasf",
+                "value": ""
+            },
+            "_itm_21janv2": {
+                "column": "21janv2",
+                "value": ""
+            },
+            "_itm_21janv102": {
+                "column": "21janv102",
+                "value": ""
+            },
+            "_itm_emp_no": {
+                "column": "Emp No",
+                "value": ""
+            },
+            "_itm_drop_pre_sr": {
+                "column": "Drop Pre Sr",
+                "value": ""
+            },
+            "_itm_sap_id": {
+                "column": "Sap Id",
+                "value": ""
+            },
+            "_itm_date_custom_filed": {
+                "column": "Date Custom Filed",
+                "value": ""
+            },
+            "_itm_time_custom_field": {
+                "column": "Time Custom Field",
+                "value": ""
+            },
+            "_itm_datetime_custon_filed": {
+                "column": "Datetime Custon Filed",
+                "value": ""
+            },
+            "_itm_dropcustom": {
+                "column": "Dropcustom",
+                "value": ""
+            },
+            "_itm_dropprelocation": {
+                "column": "Dropprelocation",
+                "value": ""
+            },
+            "_itm_testbox_any": {
+                "column": "Testbox Any",
+                "value": ""
+            },
+            "_itm_date_customformat": {
+                "column": "Date Customformat",
+                "value": ""
+            },
+            "_itm_testing_field": {
+                "column": "Testing Field",
+                "value": ""
+            },
+            "_itm_testingfields123": {
+                "column": "Testingfields123",
+                "value": ""
+            },
+            "_itm_testing": {
+                "column": "Testing",
+                "value": ""
+            },
+            "_itm_z": {
+                "column": "Z",
+                "value": ""
+            }
+        },
+        "knowledge_documents": [
+            {
+                "id": 174,
+                "title": "Hardware Issue - Battery Issue",
+                "card_img": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/uploads\/article\/18.png",
+                "tags": []
+            },
+            {
+                "id": 179,
+                "title": "New Laptop Required - Hardware Issue - IT Support",
+                "card_img": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/uploads\/article\/18.png",
+                "tags": []
+            },
+            {
+                "id": 192,
+                "title": "Testing Schedule Ticket",
+                "card_img": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/uploads\/article\/18.png",
+                "tags": []
+            },
+            {
+                "id": 198,
+                "title": "Testing Schedule Ticket",
+                "card_img": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/uploads\/article\/18.png",
+                "tags": []
+            }
+        ],
+        "serviceRequest": null
+    }
+}

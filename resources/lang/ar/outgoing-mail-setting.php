@@ -1,0 +1,123 @@
+<?php
+
+return [
+    'page' => [
+        'title' => 'إعدادات البريد الصادر',
+        'add_new_mail' => 'إضافة بريد جديد',
+        'search_placeholder' => 'بحث...',
+        'refresh' => 'تحديث',
+        'show_10' => 'عرض (10)',
+        'show_25' => 'عرض (25)',
+        'show_50' => 'عرض (50)',
+        'show_100' => 'عرض (100)',
+    ],
+
+    'table' => [
+        'mail_driver' => 'برنامج تشغيل البريد',
+        'company' => 'الشركة',
+        'mail_status' => 'حالة البريد',
+        'mail_host' => 'خادم البريد',
+        'mail_port' => 'منفذ البريد',
+        'mail_username' => 'اسم مستخدم البريد',
+        'mail_from_address' => 'عنوان المرسل',
+        'mail_from_name' => 'اسم المرسل',
+        'updated_at' => 'تاريخ التحديث',
+        'actions' => 'الإجراءات',
+    ],
+
+    'modal' => [
+        'create_title' => 'إنشاء بريد صادر',
+        'edit_title' => 'تعديل البريد الصادر',
+        'close' => 'إغلاق',
+        'create' => 'إنشاء',
+        'update' => 'تحديث',
+    ],
+
+    'fields' => [
+        'mail_enabled' => 'حالة خدمة البريد الإلكتروني',
+        'company_id' => 'الشركة',
+        'mail_from_name' => 'اسم المرسل',
+        'mail_driver' => 'برنامج تشغيل البريد',
+        'mail_host' => 'خادم البريد',
+        'mail_port' => 'منفذ البريد',
+        'mail_username' => 'حساب البريد الإلكتروني',
+        'mail_password' => 'كلمة مرور البريد',
+        'mail_encryption' => 'تشفير البريد',
+        'mail_from_address' => 'عنوان البريد للمرسل',
+    ],
+
+    'placeholders' => [
+        'company_id' => 'اختر الشركة',
+        'mail_from_name' => 'أدخل اسم المرسل',
+        'mail_driver' => 'أدخل برنامج تشغيل البريد',
+        'mail_host' => 'أدخل خادم البريد',
+        'mail_port' => 'أدخل منفذ البريد',
+        'mail_username' => 'أدخل حساب البريد الإلكتروني',
+        'mail_password' => 'أدخل كلمة المرور',
+        'mail_from_address' => 'أدخل عنوان المرسل',
+    ],
+
+    'options' => [
+        'enable' => 'تفعيل',
+        'disable' => 'تعطيل',
+        'ssl' => 'SSL',
+        'tls' => 'TLS',
+        'false' => 'خطأ',
+    ],
+
+    'messages' => [
+        'unable_to_display' => 'تعذر عرض التفاصيل المطلوبة',
+        'unable_to_create' => 'تعذر إنشاء البريد الصادر.',
+        'unable_to_delete' => 'تعذر حذف التفاصيل المطلوبة',
+        'not_editable' => 'غير قابل للتعديل',
+        'mail_created' => 'تم إنشاء البريد الصادر بنجاح.',
+        'mail_updated' => 'تم تحديث البريد الصادر بنجاح.',
+        'mail_deleted' => 'تم حذف البريد الصادر بنجاح.',
+        'something_went_wrong' => 'حدث خطأ ما.',
+        'delete_record' => 'هل أنت متأكد أنك تريد حذف هذا البريد الصادر؟',
+        'search_invalid' => 'يرجى إدخال قيمة بحث صحيحة.',
+        'insufficient_permission' => 'صلاحيات غير كافية.',
+        'fail' => 'فشل',
+    ],
+
+    'actions' => [
+        'edit' => 'تعديل',
+        'delete' => 'حذف',
+    ],
+
+    'validation' => [
+        'company_required' => 'يرجى اختيار شركة.',
+        'mail_driver_required' => 'يرجى إدخال برنامج تشغيل البريد.',
+        'mail_enabled_required' => 'يرجى اختيار حالة خدمة البريد.',
+        'mail_host_required' => 'يرجى إدخال خادم البريد.',
+        'mail_port_required' => 'يرجى إدخال منفذ البريد.',
+        'mail_username_required' => 'يرجى إدخال حساب البريد الإلكتروني.',
+        'mail_username_email' => 'يرجى إدخال بريد إلكتروني صالح.',
+        'mail_password_required' => 'يرجى إدخال كلمة المرور.',
+        'mail_encryption_required' => 'يرجى اختيار التشفير.',
+        'mail_from_address_required' => 'يرجى إدخال عنوان المرسل.',
+        'mail_from_address_email' => 'يرجى إدخال عنوان بريد صالح.',
+        'mail_from_name_required' => 'يرجى إدخال اسم المرسل.',
+    ],
+
+    'js' => [
+        'add_new_mail' => 'إضافة بريد جديد',
+        'create_mail' => 'إنشاء بريد صادر',
+        'edit_mail' => 'تعديل',
+        'edit_outmail' => 'تعديل البريد الصادر',
+        'delete' => 'حذف',
+        'delete_record' => 'هل أنت متأكد أنك تريد الحذف؟',
+        'search' => 'بحث',
+        'refresh_list' => 'تحديث',
+        'press_enter_with_search' => 'اضغط Enter للبحث.',
+        'something_went_wrong' => 'حدث خطأ ما.',
+        'enable' => 'تفعيل',
+        'disable' => 'تعطيل',
+        'company' => 'الشركة',
+        'update' => 'تحديث',
+        'create' => 'إنشاء',
+        'select_company' => 'اختر الشركة',
+        'status_enabled' => 'مفعل',
+        'status_disabled' => 'معطل',
+    ],
+];

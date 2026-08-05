@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'failed_jobs' => 'Fehlgeschlagene Aufträge',
+    'payload' => 'Nutzlast',
+    'exception' => 'Ausnahme',
+    'failed_at' => 'Fehlgeschlagen am',
+    'search' => 'Fehlgeschlagene Aufträge suchen',
+    'filter' => 'Filter',
+    'refresh_list' => 'Liste aktualisieren',
+    'download_report' => 'Bericht herunterladen',
+    'show_10' => '10 anzeigen',
+    'show_25' => '25 anzeigen',
+    'show_50' => '50 anzeigen',
+    'show_100' => '100 anzeigen',
+    'active_filters' => 'Aktive Filter',
+    'advance_filter' => 'Erweiterter Filter',
+    'filter_by_date' => 'Nach Datum filtern',
+    'filter_by_daterange' => 'Datumsbereich',
+    'no_filter' => 'Kein Filter',
+    'clear' => 'Löschen',
+    'apply' => 'Anwenden',
+    'close' => 'Schließen',
+    'select_date_range' => 'Datumsbereich auswählen',
+    'something_went_wrong' => 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.',
+    'please_enter_valid_search' => 'Bitte geben Sie einen gültigen Suchbegriff ein.',
+    'press_enter_with_search' => 'Drücken Sie Enter zum Suchen',
+];

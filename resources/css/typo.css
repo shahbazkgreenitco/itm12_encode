@@ -1,0 +1,2294 @@
+/* ================= TYPOGRAPHY VARIABLES ================= */
+:root {
+    /* Font Family */
+    --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Font Weights */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* Font Sizes */
+    --font-size-h1: 1.75rem;
+    /* 28px */
+    --font-size-h2: 1.5rem;
+    /* 24px */
+    --font-size-h3: 1.25rem;
+    /* 20px */
+    --font-size-h4: 1.125rem;
+    /* 18px */
+    --font-size-s1: 1.125rem;
+    /* 18px */
+    --font-size-s2: 1rem;
+    /* 16px */
+    --font-size-b1: 1rem;
+    /* 16px */
+    --font-size-b2: 0.875rem;
+    /* 14px */
+    --font-size-b3: 0.875rem;
+    /* 14px */
+    --font-size-b4: 0.8125rem;
+    /* 13px */
+    --font-size-b5: 0.75rem;
+    /* 12px */
+    --font-size-b6: 0.6875rem;
+    /* 11px */
+    --font-size-b7: 0.625rem;
+    /* 10px */
+
+
+    /* Line Heights */
+    --line-height-h1: 2.125rem;
+    /* 34px */
+    --line-height-h2: 1.75rem;
+    /* 28px */
+    --line-height-h3: 1.75rem;
+    /* 28px */
+    --line-height-h4: 1.75rem;
+    /* 28px */
+    --line-height-s1: 1.75rem;
+    /* 28px */
+    --line-height-s2: 1.5rem;
+    /* 24px */
+    --line-height-b1: 1.5rem;
+    /* 24px */
+    --line-height-b2: 1.5rem;
+    /* 24px */
+    --line-height-b3: 1.25rem;
+    /* 20px */
+    --line-height-b4: 1.25rem;
+    /* 20px */
+    --line-height-b5: 1rem;
+    /* 16px */
+    --line-height-b6: 1rem;
+    /* 16px */
+    --line-height-b7: 0.875rem;
+    /* 14px */
+
+    /* font color */
+    --text-color-primary: #000000;
+    --text-color-secondary: #000000;
+
+}
+
+/* ================= BASE TYPOGRAPHY ================= */
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-b1);
+    font-weight: var(--font-regular);
+    line-height: var(--line-height-b1);
+}
+
+/* ================= HEADINGS ================= */
+
+/* H1. Headline */
+h1,
+.h1-text,
+.h1-headline {
+    font-family: var(--font-primary) !important;
+    font-weight: var(--font-semi-bold) !important;
+    font-size: var(--font-size-h1) !important;
+    line-height: var(--line-height-h1) !important;
+    /* margin: 0; */
+}
+
+/* H2. Headline (Page Title) */
+h2,
+.h2-text,
+.h2-headline,
+.page-title {
+    font-family: var(--font-primary);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+    /* margin: 0; */
+}
+
+/* H3. Headline */
+h3,
+.h3-text,
+.h3-headline {
+    font-family: var(--font-primary);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-h3);
+    /* margin: 0; */
+}
+
+h4,
+.h4-text,
+.h4-headline {
+    font-family: var(--font-primary) !important;
+    font-weight: var(--font-medium) !important;
+    font-size: var(--font-size-b3) !important;
+    line-height: var(--line-height-h4) !important;
+    /* margin: 0; */
+}
+
+/* ================= SUBTITLES ================= */
+
+/* S1. Subtitle (Secondary Menu) */
+.s1,
+.s1-text,
+.s1-subtitle,
+.subtitle-secondary {
+    font-family: var(--font-primary) !important;
+    font-weight: var(--font-regular) !important;
+    font-size: var(--font-size-s1) !important;
+    line-height: var(--line-height-s1) !important;
+    /* margin: 0; */
+}
+
+/* S2. Subtitle (Primary Menu) */
+.s2,
+.s2-text,
+.s2-subtitle,
+.subtitle-primary {
+    font-family: var(--font-primary) !important;
+    font-weight: var(--font-semi-bold) !important;
+    font-size: var(--font-size-s2) !important;
+    line-height: var(--line-height-s2) !important;
+    /* margin: 0; */
+}
+
+/* ================= BODY TEXT ================= */
+
+/* B1. Body (Primary) */
+p,
+.b1,
+.b1-text,
+.b1-body,
+.body-primary {
+    font-family: var(--font-primary) !important;
+    font-weight: var(--font-regular) !important;
+    font-size: var(--font-size-b1) !important;
+    line-height: var(--line-height-b1) !important;
+    /* margin: 0; */
+}
+
+/* B2. Body */
+.b2,
+.b2-text,
+.b2-body td {
+    font-family: var(--font-primary) !important;
+    font-weight: var(--font-medium) !important;
+    font-size: var(--font-size-b2) !important;
+    line-height: var(--line-height-b2) !important;
+    /* margin: 0; */
+}
+
+/* B3. Body */
+.b3,
+.b3-text,
+.b3-body {
+    font-family: var(--font-primary) !important;
+    font-weight: var(--font-regular) !important;
+    font-size: var(--font-size-b3) !important;
+    line-height: var(--line-height-b3) !important;
+    /* margin: 0; */
+}
+
+/* B4. Body */
+.b4,
+.b4-text,
+.b4-body {
+    font-family: var(--font-primary) !important;
+    font-weight: var(--font-medium) !important;
+    font-size: var(--font-size-b4) !important;
+    line-height: var(--line-height-b4) !important;
+    /* margin: 0; */
+}
+
+/* B5. Body */
+.b5,
+.b5-text,
+.b5-body {
+    font-family: var(--font-primary) !important;
+    font-weight: var(--font-regular) !important;
+    font-size: var(--font-size-b5) !important;
+    line-height: var(--line-height-b5) !important;
+}
+
+/* B6. Body */
+.b6,
+.b6-text,
+.b6-body {
+    font-family: var(--font-primary) !important;
+    font-weight: var(--font-medium) !important;
+    font-size: var(--font-size-b6) !important;
+    line-height: var(--line-height-b6) !important;
+}
+
+/* B7. Body */
+.b7,
+.b7-text,
+.b7-body {
+    font-family: var(--font-primary) !important;
+    font-weight: var(--font-regular) !important;
+    font-size: var(--font-size-b7) !important;
+    line-height: var(--line-height-b7) !important;
+}
+
+/* ======================== mandatory ======================== */
+
+label.mandatory,
+span.mandatory {
+    position: relative;
+}
+
+label.mandatory:after,
+span.mandatory:after {
+    content: "*";
+    position: absolute;
+    top: -2px;
+    font-size: 17px;
+    color: #e00;
+    font-weight: bold;
+}
+
+/* ================= UTILITY CLASSES ================= */
+
+/* Font Weights */
+.font-regular {
+    font-weight: var(--font-regular);
+}
+
+.font-medium {
+    font-weight: var(--font-medium);
+}
+
+.font-semi-bold {
+    font-weight: var(--font-semi-bold);
+}
+
+.font-bold {
+    font-weight: var(--font-bold);
+}
+
+/* Text Alignment */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Text Transform */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+/* Letter Spacing */
+.letter-spacing-tight {
+    letter-spacing: -0.02em;
+}
+
+.letter-spacing-normal {
+    letter-spacing: 0;
+}
+
+.letter-spacing-wide {
+    letter-spacing: 0.02em;
+}
+
+/* Text Decoration */
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-no-underline {
+    text-decoration: none;
+}
+
+/* Text Overflow */
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ellipsis {
+    max-width: auto;
+    /* adjust as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Line Clamp (Multi-line truncation) */
+.line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* White Space */
+.whitespace-normal {
+    white-space: normal;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+.whitespace-pre {
+    white-space: pre;
+}
+
+.whitespace-pre-line {
+    white-space: pre-line;
+}
+
+.whitespace-pre-wrap {
+    white-space: pre-wrap;
+}
+
+
+/* =================================================== COLOR SYSTEM =================================================== */
+
+:root {
+    /* ================= BRAND COLORS ================= */
+    --color-primary: #FF2F35;
+    --color-secondary: #001B51;
+    --color-primary-text: #000000;
+    --color-secondary-text: #7F7F7F;
+    --color-tab-inactive: #7F7F7F;
+    --color-outline: #EBEBEB;
+    --color-surface: #F8FAFD;
+    --color-white: #FFFFFF;
+
+    /* ================= STATUS COLORS ================= */
+    --status-open: #006FFD;
+    --status-in-progress: #EE7C27;
+    --status-on-hold: #6E6E6E;
+
+    /* ================= PRIORITY COLORS ================= */
+    --priority-critical: #F73019;
+    --priority-high: #F2071B;
+    --priority-medium: #F3AE2C;
+    --priority-low-2: #19AC53;
+    --priority-low: #AEE387;
+
+    /* ================= SLA TIMING COLORS ================= */
+    --sla-active: #01BE86;
+    --sla-about-to-reach: #F78F2A;
+    --sla-breached: #B81F24;
+
+    /* ================= NOTIFICATION COLORS ================= */
+    --notification-new-ticket: #C4E8FE;
+    --notification-user-updated: #F8E8E8;
+    --notification-vip-ticket: #FCDBE6;
+    --notification-handler: #D7DAF9;
+    --notification-third-party: #EAEAEA;
+    --notification-escalated: #FDE9E9;
+    --notification-reassigned: #F4C3C9;
+    --notification-breached: #CFD7DC;
+
+    /* ================= TEXT COLORS (from typography spec) ================= */
+    --text-h1-headline: #000000;
+    --text-h2-page-title: #000000;
+    --text-h3-headline: #000000;
+    --text-b1-body-primary: #000000;
+    --text-muted: #6b7280;
+    --text-light: #9ca3af;
+}
+
+/* ================= BRAND COLOR CLASSES ================= */
+
+/* Primary */
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.border-primary {
+    border-color: var(--color-primary);
+}
+
+/* Secondary */
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.border-secondary {
+    border-color: var(--color-secondary);
+}
+
+/* Primary Text */
+.bg-primary-text {
+    background-color: var(--color-primary-text);
+}
+
+.text-primary-text {
+    color: var(--color-primary-text);
+}
+
+.border-primary-text {
+    border-color: var(--color-primary-text);
+}
+
+/* Secondary Text */
+.bg-secondary-text {
+    background-color: var(--color-secondary-text);
+}
+
+.text-secondary-text {
+    color: var(--color-secondary-text);
+}
+
+.border-secondary-text {
+    border-color: var(--color-secondary-text);
+}
+
+/* Tab Inactive */
+.bg-tab-inactive {
+    background-color: var(--color-tab-inactive);
+}
+
+.text-tab-inactive {
+    color: var(--color-tab-inactive);
+}
+
+.border-tab-inactive {
+    border-color: var(--color-tab-inactive);
+}
+
+/* Outline */
+.bg-outline {
+    background-color: var(--color-outline);
+}
+
+.text-outline {
+    color: var(--color-outline);
+}
+
+.border-outline {
+    border-color: var(--color-outline);
+}
+
+/* Surface */
+.bg-surface {
+    background-color: var(--color-surface);
+}
+
+.text-surface {
+    color: var(--color-surface);
+}
+
+.border-surface {
+    border-color: var(--color-surface);
+}
+
+/* White */
+.bg-white {
+    background-color: var(--color-white);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.border-white {
+    border-color: var(--color-white);
+}
+
+/* ================= STATUS COLOR CLASSES ================= */
+
+/* Open */
+.bg-status-open {
+    background-color: var(--status-open);
+}
+
+.text-status-open {
+    color: var(--status-open);
+}
+
+.border-status-open {
+    border-color: var(--status-open);
+}
+
+/* In Progress */
+.bg-status-in-progress {
+    background-color: var(--status-in-progress);
+}
+
+.text-status-in-progress {
+    color: var(--status-in-progress);
+}
+
+.border-status-in-progress {
+    border-color: var(--status-in-progress);
+}
+
+/* On Hold */
+.bg-status-on-hold {
+    background-color: var(--status-on-hold);
+}
+
+.text-status-on-hold {
+    color: var(--status-on-hold);
+}
+
+.border-status-on-hold {
+    border-color: var(--status-on-hold);
+}
+
+/* ================= PRIORITY COLOR CLASSES ================= */
+
+/* Critical */
+.bg-priority-critical {
+    background-color: var(--priority-critical);
+}
+
+.text-priority-critical {
+    color: var(--priority-critical);
+}
+
+.border-priority-critical {
+    border-color: var(--priority-critical);
+}
+
+/* High */
+.bg-priority-high {
+    background-color: var(--priority-high);
+}
+
+.text-priority-high {
+    color: var(--priority-high);
+}
+
+.border-priority-high {
+    border-color: var(--priority-high);
+}
+
+/* Medium */
+.bg-priority-medium {
+    background-color: var(--priority-medium);
+}
+
+.text-priority-medium {
+    color: var(--priority-medium);
+}
+
+.border-priority-medium {
+    border-color: var(--priority-medium);
+}
+
+/* Low 2 */
+.bg-priority-low-2 {
+    background-color: var(--priority-low-2);
+}
+
+.text-priority-low-2 {
+    color: var(--priority-low-2);
+}
+
+.border-priority-low-2 {
+    border-color: var(--priority-low-2);
+}
+
+/* Low */
+.bg-priority-low {
+    background-color: var(--priority-low);
+}
+
+.text-priority-low {
+    color: var(--priority-low);
+}
+
+.border-priority-low {
+    border-color: var(--priority-low);
+}
+
+/* ================= SLA TIMING COLOR CLASSES ================= */
+
+/* SLA */
+.bg-sla-active {
+    background-color: var(--sla-active);
+}
+
+.text-sla-active {
+    color: var(--sla-active);
+}
+
+.border-sla-active {
+    border-color: var(--sla-active);
+}
+
+/* About to Reach */
+.bg-sla-about-to-reach {
+    background-color: var(--sla-about-to-reach);
+}
+
+.text-sla-about-to-reach {
+    color: var(--sla-about-to-reach);
+}
+
+.border-sla-about-to-reach {
+    border-color: var(--sla-about-to-reach);
+}
+
+/* Breached */
+.bg-sla-breached {
+    background-color: var(--sla-breached);
+}
+
+.text-sla-breached {
+    color: var(--sla-breached);
+}
+
+.border-sla-breached {
+    border-color: var(--sla-breached);
+}
+
+/* ================= NOTIFICATION COLOR CLASSES ================= */
+
+/* New Ticket */
+.bg-notification-new-ticket {
+    background-color: var(--notification-new-ticket);
+}
+
+.text-notification-new-ticket {
+    color: var(--notification-new-ticket);
+}
+
+.border-notification-new-ticket {
+    border-color: var(--notification-new-ticket);
+}
+
+/* User Updated */
+.bg-notification-user-updated {
+    background-color: var(--notification-user-updated);
+}
+
+.text-notification-user-updated {
+    color: var(--notification-user-updated);
+}
+
+.border-notification-user-updated {
+    border-color: var(--notification-user-updated);
+}
+
+/* VIP Ticket */
+.bg-notification-vip-ticket {
+    background-color: var(--notification-vip-ticket);
+}
+
+.text-notification-vip-ticket {
+    color: var(--notification-vip-ticket);
+}
+
+.border-notification-vip-ticket {
+    border-color: var(--notification-vip-ticket);
+}
+
+/* Handler */
+.bg-notification-handler {
+    background-color: var(--notification-handler);
+}
+
+.text-notification-handler {
+    color: var(--notification-handler);
+}
+
+.border-notification-handler {
+    border-color: var(--notification-handler);
+}
+
+/* Third Party Updated */
+.bg-notification-third-party {
+    background-color: var(--notification-third-party);
+}
+
+.text-notification-third-party {
+    color: var(--notification-third-party);
+}
+
+.border-notification-third-party {
+    border-color: var(--notification-third-party);
+}
+
+/* Escalated */
+.bg-notification-escalated {
+    background-color: var(--notification-escalated);
+}
+
+.text-notification-escalated {
+    color: var(--notification-escalated);
+}
+
+.border-notification-escalated {
+    border-color: var(--notification-escalated);
+}
+
+/* Reassigned */
+.bg-notification-reassigned {
+    background-color: var(--notification-reassigned);
+}
+
+.text-notification-reassigned {
+    color: var(--notification-reassigned);
+}
+
+.border-notification-reassigned {
+    border-color: var(--notification-reassigned);
+}
+
+/* Breached */
+.bg-notification-breached {
+    background-color: var(--notification-breached);
+}
+
+.text-notification-breached {
+    color: var(--notification-breached);
+}
+
+.border-notification-breached {
+    border-color: var(--notification-breached);
+}
+
+/* ================= UTILITY COLOR CLASSES ================= */
+
+/* Transparent */
+.bg-transparent {
+    background-color: transparent;
+}
+
+.border-transparent {
+    border-color: transparent;
+}
+
+/* Current Color */
+.text-current {
+    color: currentColor;
+}
+
+.border-current {
+    border-color: currentColor;
+}
+
+/* Opacity Utilities */
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-10 {
+    opacity: 0.1;
+}
+
+.opacity-20 {
+    opacity: 0.2;
+}
+
+.opacity-30 {
+    opacity: 0.3;
+}
+
+.opacity-40 {
+    opacity: 0.4;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.opacity-60 {
+    opacity: 0.6;
+}
+
+.opacity-70 {
+    opacity: 0.7;
+}
+
+.opacity-80 {
+    opacity: 0.8;
+}
+
+.opacity-90 {
+    opacity: 0.9;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+/* Hover Opacity (for interactive elements) */
+.hover-opacity-80:hover {
+    opacity: 0.8;
+}
+
+.hover-opacity-90:hover {
+    opacity: 0.9;
+}
+
+.hover-opacity-100:hover {
+    opacity: 1;
+}
+
+/* ================= STATUS BADGES ================= */
+.badge-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.badge-status-open {
+    background-color: rgba(0, 111, 253, 0.1);
+    color: var(--status-open);
+}
+
+.badge-status-in-progress {
+    background-color: rgba(238, 124, 39, 0.1);
+    color: var(--status-in-progress);
+}
+
+.badge-status-on-hold {
+    background-color: rgba(110, 110, 110, 0.1);
+    color: var(--status-on-hold);
+}
+
+/* ================= PRIORITY BADGES ================= */
+.badge-priority {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.badge-priority-critical {
+    background-color: rgba(247, 48, 25, 0.1);
+    color: var(--priority-critical);
+}
+
+.badge-priority-high {
+    background-color: rgba(242, 7, 27, 0.1);
+    color: var(--priority-high);
+}
+
+.badge-priority-medium {
+    background-color: rgba(243, 174, 44, 0.1);
+    color: var(--priority-medium);
+}
+
+.badge-priority-low-2 {
+    background-color: rgba(25, 172, 83, 0.1);
+    color: var(--priority-low-2);
+}
+
+.badge-priority-low {
+    background-color: rgba(174, 227, 135, 0.2);
+    color: #5a8c2f;
+}
+
+/* ================== AMG BADGES ===================== */
+.amg-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    padding-inline: 10px;
+    border-radius: 4px;
+    border: 1px solid #e5e7eb;
+    background: transparent;
+    color: #111c2d;
+    height: 30px;
+    white-space: nowrap;
+    cursor: default;
+    transition: opacity .15s ease;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.amg-badge.badge-icon {
+    gap: 6px;
+    padding-left: 10px;
+}
+
+.amg-badge.badge-icon svg,
+.amg-badge.badge-icon .amg-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+
+.amg-badge.badge-high {
+    background: #FFF3F0;
+}
+
+.amg-badge.badge-medium {
+    background: #fffbeb;
+    color: #92400e;
+    border-color: #fde68a;
+}
+
+.amg-badge.badge-low {
+    background: #f0fdf4;
+    color: #166534;
+    border-color: #bbf7d0;
+}
+
+.amg-badge.badge-info {
+    background: #eff6ff;
+    color: #1e40af;
+    border-color: #bfdbfe;
+}
+
+.amg-badge.badge-success {
+    background: #ecfdf5;
+    color: #065f46;
+    border-color: #a7f3d0;
+}
+
+.amg-badge.badge-warning {
+    background: #fffbeb;
+    color: #92400e;
+    border-color: #fde68a;
+}
+
+.amg-badge.badge-danger {
+    background: #fef2f2;
+    color: #991b1b;
+    border-color: #fecaca;
+}
+
+.amg-badge.badge-neutral {
+    background: #f9fafb;
+    color: #6b7280;
+    border-color: #e5e7eb;
+}
+
+.amg-badge.badge-dark {
+    background: #1f2937;
+    color: #f9fafb;
+    border-color: #374151;
+}
+
+.amg-ticket-bar {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 8px 14px;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.amg-divider {
+    width: 1px;
+    height: 18px;
+    background: #e5e7eb;
+    margin: 0 8px;
+    flex-shrink: 0;
+}
+
+/* ================= SLA BADGES ================= */
+.badge-sla {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.badge-sla-active {
+    background-color: rgba(1, 190, 134, 0.1);
+    color: var(--sla-active);
+}
+
+.badge-sla-about-to-reach {
+    background-color: rgba(247, 143, 42, 0.1);
+    color: var(--sla-about-to-reach);
+}
+
+.badge-sla-breached {
+    background-color: rgba(184, 31, 36, 0.1);
+    color: var(--sla-breached);
+}
+
+
+/* =================================================== BUTTON DESIGN SYSTEM - css =================================================== */
+:root {
+    /* Primary Colors */
+    --btn-primary-bg: #E20505;
+    --btn-primary-bg-hover: #f4595d;
+    --btn-primary-bg-active: #f4595d;
+    --btn-primary-text: #ffffff;
+
+    /* Secondary Colors */
+    --btn-secondary-bg: #001B51;
+    --btn-secondary-bg-hover: #334974;
+    --btn-secondary-bg-active: #334974;
+    --btn-secondary-text: #ffffff;
+
+    /* Outline Colors */
+    --btn-outline-border: #E20505;
+    --btn-outline-text: #E20505;
+    --btn-outline-bg-hover: #E20505;
+    --btn-outline-bg-active: #E20505;
+
+    /* Tertiary/Ghost Colors */
+    --btn-tertiary-bg: #EEEEEE;
+    --btn-tertiary-text: #424242;
+    --btn-tertiary-bg-hover: #bebebe;
+    --btn-tertiary-bg-active: #bebebe;
+
+    /* white */
+    --btn-white-bg: #ffffff;
+    --btn-white-bg-hover: #f9fafb;
+    --btn-white-bg-active: #f3f4f6;
+    --btn-white-text: #1f2937;
+    --btn-white-border: #e5e7eb;
+    --btn-white-border-hover: #d1d5db;
+    --btn-white-shadow-hover: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+    /* Inactive State */
+    --btn-inactive-bg: #EEEEEE;
+    --btn-inactive-text: #9e9e9e;
+    --btn-inactive-border: #f1f1f1;
+
+    /* Link Colors */
+    --btn-link-text: #E20505;
+    --btn-link-text-hover: #c1262a;
+    --btn-link-text-active: #c1262a;
+
+    /* Typography */
+    --btn-font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    ;
+    --btn-font-size: 14px;
+    --btn-font-weight: 400;
+    --btn-line-height: 1.5;
+
+    /* Spacing & Sizing */
+    --btn-padding-vertical: 6px;
+    --btn-padding-horizontal: 20px;
+    --btn-border-radius: 6px;
+    --btn-border-width: 1px;
+
+    /* Effects */
+    --btn-transition-duration: 200ms;
+    --btn-transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+    --btn-shadow-focus: 0 0 0 3px rgba(245, 9, 28, 0.2);
+    --btn-shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.amg-btn {
+    /*  Reset & Foundation */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    /* Box Model */
+    padding: var(--btn-padding-vertical) var(--btn-padding-horizontal);
+    margin: 0;
+    border: var(--btn-border-width) solid transparent;
+    border-radius: var(--btn-border-radius);
+
+    /* Typography */
+    font-family: var(--btn-font-family);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    line-height: var(--btn-line-height);
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+
+    /* Interaction */
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    /* Transitions */
+    transition:
+        background-color var(--btn-transition-duration) var(--btn-transition-timing),
+        border-color var(--btn-transition-duration) var(--btn-transition-timing),
+        color var(--btn-transition-duration) var(--btn-transition-timing),
+        box-shadow var(--btn-transition-duration) var(--btn-transition-timing),
+        transform var(--btn-transition-duration) var(--btn-transition-timing);
+
+    /* Accessibility */
+    &:focus {
+        outline: none;
+        box-shadow: var(--btn-shadow-focus);
+    }
+
+    &:focus:not(:focus-visible) {
+        box-shadow: none;
+    }
+
+    &:focus-visible {
+        box-shadow: var(--btn-shadow-focus);
+    }
+
+    /* Disabled State */
+    &:disabled,
+    &[aria-disabled="true"] {
+        cursor: not-allowed;
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    /* Active State Enhancement */
+    &:active:not(:disabled) {
+        transform: translateY(1px);
+    }
+}
+
+/* Icon/SVG Support */
+.amg-btn svg,
+.amg-btn i {
+    width: 1.2em;
+    height: 1.2em;
+    flex-shrink: 0;
+}
+
+.amg-btn svg {
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    fill: none;
+    stroke-width: 2;
+}
+
+.amg-btn.amg-btn-white svg {
+    color: #000;
+}
+
+/* Icon Only Button */
+.amg-btn-icon-only {
+    padding: var(--btn-padding-vertical);
+    aspect-ratio: 1 / 1;
+    gap: 0;
+}
+
+/* Icon Positioning */
+.amg-btn-icon-left {
+    flex-direction: row;
+}
+
+.amg-btn-icon-right {
+    flex-direction: row-reverse;
+}
+
+/* -------------------------------- Primary Button (Red) ------------------------------- */
+
+.amg-btn-primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border-color: var(--btn-primary-bg);
+
+    &:hover:not(:disabled) {
+        background-color: var(--btn-primary-bg-hover);
+        border-color: var(--btn-primary-bg-hover);
+        box-shadow: var(--btn-shadow-hover);
+    }
+
+    &:active:not(:disabled) {
+        background-color: var(--btn-primary-bg-active);
+        border-color: var(--btn-primary-bg-active);
+        box-shadow: none;
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 3px rgba(241, 47, 53, 0.3);
+    }
+}
+
+
+/* -------------------------------- Secondary Button (Navy Blue) ------------------------------- */
+
+.amg-btn-secondary {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
+    border-color: var(--btn-secondary-bg);
+
+    &:hover:not(:disabled) {
+        background-color: var(--btn-secondary-bg-hover);
+        border-color: var(--btn-secondary-bg-hover);
+        box-shadow: var(--btn-shadow-hover);
+    }
+
+    &:active:not(:disabled) {
+        background-color: var(--btn-secondary-bg-active);
+        border-color: var(--btn-secondary-bg-active);
+        box-shadow: none;
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 3px rgba(0, 27, 81, 0.3);
+    }
+}
+
+/* -------------------------------- Outline Button (Pink Border) ------------------------------- */
+
+.amg-btn-outline {
+    background-color: transparent;
+    color: var(--btn-outline-text);
+    border-color: var(--btn-outline-border);
+
+    &:hover:not(:disabled) {
+        background-color: var(--btn-outline-bg-hover);
+        color: var(--btn-primary-text);
+        border-color: var(--btn-outline-border);
+    }
+
+    &:active:not(:disabled) {
+        background-color: var(--btn-outline-bg-active);
+        color: var(--btn-outline-text);
+        border-color: var(--btn-outline-border);
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 3px rgba(241, 47, 53, 0.3);
+    }
+}
+
+/* -------------------------------- Outline Button White (Pink Border) ------------------------------- */
+
+.amg-btn-outline-white {
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid #fff;
+
+    padding: 14px 32px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    transition: all .25s ease;
+
+    &:hover:not(:disabled) {
+        background: #fff !important;
+        color: #000 !important;
+        border-color: #fff !important;
+    }
+
+    &:active:not(:disabled) {
+        background: #e9e9e9;
+        color: #000;
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, .25);
+    }
+
+    &:disabled {
+        opacity: .6;
+        cursor: not-allowed;
+    }
+}
+
+/* -------------------------------- Tertiary/Ghost Button (Transparent) ------------------------------- */
+
+
+.amg-btn-tertiary,
+.amg-btn-ghost {
+    background-color: var(--btn-tertiary-bg);
+    color: var(--btn-tertiary-text);
+    border-color: transparent;
+
+    &:hover:not(:disabled) {
+        background-color: var(--btn-tertiary-bg-hover);
+        color: var(--btn-tertiary-text);
+    }
+
+    &:active:not(:disabled) {
+        background-color: var(--btn-tertiary-bg-active);
+        color: var(--btn-tertiary-text);
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    }
+}
+
+[data-bs-theme=dark] .amg-btn.amg-btn-ghost {
+    color: #000;
+}
+
+/* -------------------------------- Subtle Button (Light Border, Gray Text) ------------------------------- */
+
+.amg-btn-subtle {
+    background-color: #ffffff;
+    color: #00000030;
+    border-color: #EBEBEB;
+
+    &:hover:not(:disabled) {
+        background-color: #f9fafb;
+        border-color: #d1d5db;
+        color: #6b7280;
+    }
+
+    &:active:not(:disabled) {
+        background-color: #ffffff;
+        border-color: #EBEBEB;
+        color: #6b7280;
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.2);
+    }
+}
+
+
+/* -------------------------------- Inactive State (Disabled Style) ------------------------------- */
+
+.amg-btn-inactive,
+.amg-btn:disabled {
+    background-color: var(--btn-inactive-bg);
+    color: var(--btn-inactive-text);
+    border-color: var(--btn-inactive-border);
+    cursor: not-allowed;
+    pointer-events: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: var(--btn-inactive-bg);
+        color: var(--btn-inactive-text);
+        border-color: var(--btn-inactive-border);
+        box-shadow: none;
+        transform: none;
+    }
+}
+
+/* -------------------------------- Link Button (Text Link Style) ------------------------------- */
+
+.amg-btn-link {
+    background-color: transparent;
+    color: var(--btn-link-text);
+    border-color: transparent;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-decoration: none;
+
+    &:hover:not(:disabled) {
+        color: var(--btn-link-text-hover);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 1.10px;
+        background-color: transparent;
+    }
+
+    &:active:not(:disabled) {
+        color: var(--btn-link-text-active);
+        background-color: transparent;
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 2px rgba(233, 30, 99, 0.3);
+        border-radius: 2px;
+    }
+
+    /*  Link with arrow/icon */
+    &::after {
+        content: '>';
+        display: inline-block;
+        margin-left: 4px;
+        text-decoration: none;
+        transition: transform var(--btn-transition-duration) var(--btn-transition-timing);
+    }
+
+    &:hover::after {
+        transform: translateX(3px);
+    }
+}
+
+/* Alternative link style without arrow */
+.amg-btn-link,
+.amg-btn-link-plain {
+    /* all the rules that were originally in .amg-btn-link go here */
+}
+
+.amg-btn-link-plain::after {
+    content: none;
+}
+
+/* -------------------------------- Size Variations ------------------------------- */
+
+.amg-btn-sm {
+    padding: 6px 16px;
+    font-size: 12px;
+    height: 30px;
+}
+
+.amg-btn-sm svg {
+    width: 15px;
+    height: 15px;
+}
+
+.amg-btn-md {
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.amg-btn-lg {
+    padding: 12px 28px;
+    font-size: 16px;
+}
+
+/* -------------------------------- Size Variations ------------------------------- */
+
+
+.amg-btn-block {
+    display: flex;
+    width: 100%;
+}
+
+.amg-btn-auto {
+    width: auto;
+}
+
+/* -------------------------------- Icon Support ------------------------------- */
+
+.amg-btn-icon {
+    padding: var(--btn-padding-vertical);
+    aspect-ratio: 1;
+
+    &.btn-sm {
+        padding: 6px;
+    }
+
+    &.btn-lg {
+        padding: 12px;
+    }
+}
+
+/* Icon positioning */
+.amg-btn-icon-left {
+    flex-direction: row;
+}
+
+.amg-btn-icon-right {
+    flex-direction: row-reverse;
+}
+
+/* -------------------------------- Loading State ------------------------------- */
+
+.amg-btn-loading {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        left: 50%;
+        margin-left: -8px;
+        margin-top: -8px;
+        border: 2px solid currentColor;
+        border-radius: 50%;
+        border-top-color: transparent;
+        animation: btn-spin 0.6s linear infinite;
+        color: var(--btn-primary-text);
+    }
+}
+
+@keyframes btn-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* -------------------------------- White Button (Download Template Style) ------------------------------- */
+
+.amg-btn-white {
+    background-color: var(--btn-white-bg);
+    color: var(--btn-white-text);
+    border-color: var(--btn-white-border);
+
+    &:hover:not(:disabled) {
+        background-color: var(--btn-white-bg-hover);
+        border-color: var(--btn-white-border-hover);
+        box-shadow: var(--btn-white-shadow-hover);
+        transform: translateY(-1px);
+    }
+
+    &:active:not(:disabled) {
+        background-color: var(--btn-white-bg-active);
+        border-color: var(--btn-white-border-hover);
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 3px rgba(31, 41, 55, 0.1);
+    }
+}
+
+/* -------------------------------- Button Group ------------------------------- */
+
+
+.amg-btn-group {
+    display: inline-flex;
+
+    gap: 14px;
+
+    .btn {
+        border-radius: 0;
+
+        &:first-child {
+            border-top-left-radius: var(--btn-border-radius);
+            border-bottom-left-radius: var(--btn-border-radius);
+        }
+
+        &:last-child {
+            border-top-right-radius: var(--btn-border-radius);
+            border-bottom-right-radius: var(--btn-border-radius);
+        }
+
+        &:not(:last-child) {
+            border-right-width: 0;
+        }
+
+        &:hover {
+            z-index: 1;
+        }
+
+        &:focus {
+            z-index: 2;
+        }
+    }
+}
+
+/* -------------------------------- Responsive Utilities ------------------------------- */
+
+@media (max-width: 768px) {
+    .amg-btn-mobile-block {
+        display: flex;
+        width: 100%;
+    }
+
+    .amg-btn-mobile-sm {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+}
+
+/* -------------------------------- Accessibility Enhancements ------------------------------- */
+
+
+@media (prefers-reduced-motion: reduce) {
+    .amg-btn {
+        transition: none;
+
+        &:active:not(:disabled) {
+            transform: none;
+        }
+    }
+
+    .amg-btn-link::after {
+        transition: none;
+    }
+
+    .amg-btn-loading::after {
+        animation: none;
+        border-top-color: currentColor;
+        border-right-color: transparent;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .amg-btn {
+        border-width: 2px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --btn-tertiary-text: #e0e0e0;
+        --btn-tertiary-bg-hover: #424242;
+        --btn-tertiary-bg-active: #616161;
+        --btn-inactive-bg: #424242;
+        --btn-inactive-text: #757575;
+    }
+}
+
+/* ============================================ */
+/* HEADER ICONS - FILTER & ICON BUTTONS - SIMPLE CSS */
+/* ============================================ */
+/* Rounded buttons with light background and icon */
+/* Based on Filter button and Refresh icon button */
+/* ============================================ */
+
+/* Base icon button style */
+.header-icon-btn {
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 6px 14px;
+    border: 1.5px solid #00000024;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+[data-bs-theme=dark] .header-icon-btn span,
+.header-icon-btn span {
+    color: #7F7F7F;
+}
+
+.header-icon-btn span.filter-count-badge {
+    color: #000000;
+    opacity: .5 !important;
+    font-weight: 400 !important;
+}
+
+.header-icon-btn:hover {
+    background-color: #f9fafb;
+    border-color: #d1d5db;
+}
+
+.header-icon-btn:active {
+    background-color: #f3f4f6;
+    transform: scale(0.95);
+}
+
+/* Icon only button (square) */
+.header-icon-btn-only {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #00000024;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #6b7280;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+.header-icon-btn-only:hover {
+    background-color: #f9fafb;
+    border-color: #d1d5db;
+}
+
+.header-icon-btn-only:active {
+    background-color: #f3f4f6;
+    transform: scale(0.95);
+}
+
+
+
+/* Icon styling inside button */
+.header-icon-btn svg,
+.header-icon-btn-only svg {
+    width: 20px;
+    height: 20px;
+    color: #000000;
+    opacity: .5;
+    fill: none;
+    stroke-width: 2;
+}
+
+/* Disabled state */
+.header-icon-btn:disabled,
+.header-icon-btn-only:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* Size Variations */
+
+/* Small size */
+.header-icon-btn-sm {
+    padding: 6px 7px;
+    font-size: 12px !important;
+    border-radius: 6px;
+}
+
+.header-icon-btn-sm svg {
+    width: 15px;
+    height: 15px;
+}
+
+.header-icon-btn-sm i {
+    font-size: 18px;
+}
+
+.header-icon-btn-only-sm {
+    width: 30px;
+    height: 30px;
+    padding: 6px 7px;
+    border-radius: 6px;
+}
+
+.header-icon-btn-only-sm svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* Large size */
+.header-icon-btn-lg {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 14px;
+}
+
+.header-icon-btn-lg svg {
+    width: 22px;
+    height: 22px;
+}
+
+.header-icon-btn-only-lg {
+    width: 52px;
+    height: 52px;
+    padding: 12px;
+    border-radius: 14px;
+}
+
+.header-icon-btn-only-lg svg {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* ===== HEADER ICON SEARCH ===== */
+.header-icon-search {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding-inline: 12px;
+    border-radius: 8px;
+    gap: 6px;
+    border: 1px solid #00000024;
+    transition: all 0.2s ease;
+}
+
+.header-icon-search:focus-within {
+    border-color: #00000050;
+}
+
+.header-icon-search:hover {
+    background-color: #f9fafb;
+}
+
+.header-icon-search svg {
+    flex-shrink: 0;
+    opacity: 0.5;
+}
+
+.header-icon-search input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6b7280;
+    width: 100%;
+    height: 20px;
+}
+
+.header-icon-search input:focus {
+    outline: none;
+}
+
+.header-icon-search input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.7;
+    color: #9ca3af;
+}
+
+/* Size variations */
+/* Small */
+.header-icon-search-sm {
+    height: 30px;
+    border-radius: 6px;
+}
+
+.header-icon-search-sm svg {
+    width: 16px;
+    height: 16px;
+}
+
+.header-icon-search-sm input {
+    font-size: 13px;
+    height: 18px;
+}
+
+/* Large */
+.header-icon-search-lg {
+    padding: 12px 18px;
+    border-radius: 10px;
+}
+
+.header-icon-search-lg svg {
+    width: 18px;
+    height: 18px;
+}
+
+.header-icon-search-lg input {
+    font-size: 15px;
+    height: 22px;
+}
+
+
+/* ============================================ */
+/* Color Variants */
+/* ============================================ */
+
+/* Primary variant (colored) */
+.icon-btn-primary {
+    background-color: #e91e63;
+    border-color: #e91e63;
+    color: #ffffff;
+}
+
+.icon-btn-primary svg {
+    stroke: #ffffff;
+}
+
+/* ============================================ */
+/* STATUS BADGE - SIMPLE CSS */
+/* ============================================ */
+/* Matches your images exactly - no fancy effects */
+/* ============================================ */
+
+/* Base badge style */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* Dot indicator */
+.status-badge::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+
+/* ============================================ */
+/* 5 Color Variants (From Your Image 2) */
+/* ============================================ */
+
+/* Red */
+.status-badge-critical {
+    background-color: #F73019;
+    color: #ffffff;
+}
+
+/* Orange */
+.status-badge-high {
+    background-color: #F2671B;
+    color: #ffffff;
+}
+
+/* Yellow */
+.status-badge-medium {
+    background-color: #F3AE2C;
+    color: #ffffff;
+}
+
+/* Green  */
+.status-badge-low {
+    background-color: #13AC53;
+    color: #ffffff;
+}
+
+/* Active */
+.status-badge-active {
+    background-color: #028244;
+    color: #ffffff;
+}
+
+/* Inactive */
+.status-badge-inactive {
+    background-color: #E83A40;
+    color: #ffffff;
+}
+
+/* ============================================ */
+/* ROLE BADGE - SIMPLE CSS */
+/* ============================================ */
+/* Pill-shaped role/label badges like "Super Admin" */
+/* ============================================ */
+
+/* Base role badge style */
+.role-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13px;
+    text-align: center;
+    white-space: nowrap;
+    align-self: flex-start;
+}
+
+/* Color Variants */
+
+/* Purple (Like "Super Admin" in image) */
+.role-badge-super-admin {
+    background-color: var(--badge-super-admin-bg);
+    color: var(--badge-super-admin-text);
+}
+
+.role-badge-admin {
+    background-color: var(--badge-admin-bg);
+    color: var(--badge-admin-text);
+}
+
+.role-badge-user {
+    background-color: var(--badge-user-bg);
+    color: var(--badge-user-text);
+}
+
+.role-badge-technician {
+    background-color: var(--badge-technician-bg);
+    color: var(--badge-technician-text) !important;
+}
+
+.role-badge-default {
+    background-color: var(--badge-default-bg);
+    color: var(--badge-default-text);
+}
+
+
+/* ============================================ */
+/* Borders */
+/* ============================================ */
+
+.card-border-light {
+    border: 1px solid #0000001A;
+}
+
+
+/* ============================================ */
+/* AMG FORM INPUT FIELD - REUSABLE CSS */
+/* ============================================ */
+
+/* Form Group Container */
+.amg-form-group {
+    margin-bottom: 20px;
+}
+
+/* Label */
+.amg-form-label {
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+/* Required asterisk */
+.amg-form-label .required {
+    color: #ef4444;
+    margin-left: 2px;
+}
+
+/* Input Field */
+.amg-input {
+    width: 100%;
+    padding: 10px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 15px;
+    color: #111827;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+/* Placeholder */
+.amg-input::placeholder {
+    color: #9ca3af;
+}
+
+/* Focus State */
+.amg-input:focus {
+    border: 1px solid #FFB8B8;
+    /* box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); */
+    outline: none;
+}
+
+/* Disabled State */
+.amg-input:disabled {
+    background-color: #f9fafb;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Error State */
+.amg-input-error {
+    border-color: #ef4444;
+}
+
+.amg-input-error:focus {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* Success State */
+.amg-input-success {
+    border-color: #10b981;
+}
+
+.amg-input-success:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* ============================================ */
+/* CUSTOM WIDTH */
+/* ============================================ */
+
+.min-w-100 {
+    min-width: 100px;
+}
+
+.min-w-120 {
+    min-width: 120px;
+}
+
+.min-w-150 {
+    min-width: 150px;
+}
+
+.min-w-180 {
+    min-width: 180px;
+}
+
+.min-w-200 {
+    min-width: 200px;
+}
+
+.min-w-250 {
+    min-width: 250px;
+}
+
+.min-w-300 {
+    min-width: 300px;
+}
+
+
+.w-100 {
+    width: 100px;
+}
+
+.w-120 {
+    width: 120px;
+}
+
+.w-150 {
+    width: 150px;
+}
+
+.w-180 {
+    width: 180px;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.w-250 {
+    width: 250px;
+}
+
+.w-300 {
+    width: 300px;
+}
+
+/* ============================================ */
+/* SIZE VARIATIONS */
+/* ============================================ */
+
+/* Small */
+.amg-input-sm {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+/* Large */
+.amg-input-lg {
+    padding: 12px 16px;
+    font-size: 16px;
+}
+
+/* ============================================ */
+/* FORM ROW (Two columns) */
+/* ============================================ */
+
+/* .amg-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+} */
+
+@media (max-width: 768px) {
+    .amg-form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================ */
+/* AMG INPUT WITH ICON - NEW VARIANT */
+/* ============================================ */
+
+/* Input wrapper for icon positioning */
+.amg-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Input with icon */
+.amg-input-with-icon {
+    padding-left: 42px;
+    /* Space for icon */
+}
+
+/* Icon container */
+.amg-input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+/* Icon sizing */
+.amg-input-icon svg,
+.amg-input-icon img,
+.amg-input-icon i {
+    width: 20px;
+    height: 20px;
+    color: #9ca3af;
+}
+
+/* Icon for small input */
+.amg-input-wrapper.amg-input-sm .amg-input-with-icon {
+    padding-left: 36px;
+}
+
+.amg-input-wrapper.amg-input-sm .amg-input-icon {
+    left: 12px;
+}
+
+.amg-input-wrapper.amg-input-sm .amg-input-icon svg,
+.amg-input-wrapper.amg-input-sm .amg-input-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Icon for large input */
+.amg-input-wrapper.amg-input-lg .amg-input-with-icon {
+    padding-left: 48px;
+}
+
+.amg-input-wrapper.amg-input-lg .amg-input-icon {
+    left: 16px;
+}
+
+.amg-input-wrapper.amg-input-lg .amg-input-icon svg,
+.amg-input-wrapper.amg-input-lg .amg-input-icon img {
+    width: 22px;
+    height: 22px;
+}
+
+/* Icon color change on focus */
+.amg-input-with-icon:focus~.amg-input-icon svg,
+.amg-input-with-icon:focus~.amg-input-icon img,
+.amg-input-with-icon:focus~.amg-input-icon i {
+    color: #3b82f6;
+}
+
+/* ============================================ */
+/* Form input required
+/* ============================================ */
+
+.form-label>span.required {
+    color: #FF0000
+}

@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'failed_jobs' => 'Lavori falliti',
+    'payload' => 'Payload',
+    'exception' => 'Eccezione',
+    'failed_at' => 'Fallito il',
+    'search' => 'Cerca lavori falliti',
+    'filter' => 'Filtro',
+    'refresh_list' => 'Aggiorna elenco',
+    'download_report' => 'Scarica report',
+    'show_10' => 'Mostra 10',
+    'show_25' => 'Mostra 25',
+    'show_50' => 'Mostra 50',
+    'show_100' => 'Mostra 100',
+    'active_filters' => 'Filtri attivi',
+    'advance_filter' => 'Filtro avanzato',
+    'filter_by_date' => 'Filtra per data',
+    'filter_by_daterange' => 'Intervallo di date',
+    'no_filter' => 'Nessun filtro',
+    'clear' => 'Cancella',
+    'apply' => 'Applica',
+    'close' => 'Chiudi',
+    'select_date_range' => 'Seleziona intervallo di date',
+    'something_went_wrong' => 'Qualcosa è andato storto. Riprova.',
+    'please_enter_valid_search' => 'Inserisci un termine di ricerca valido.',
+    'press_enter_with_search' => 'Premi Invio per cercare',
+];

@@ -1,0 +1,123 @@
+<?php
+
+return [
+    'page' => [
+        'title' => 'આઉટગોઇંગ મેઇલ સેટિંગ્સ',
+        'add_new_mail' => 'નવી મેઇલ ઉમેરો',
+        'search_placeholder' => 'શોધો...',
+        'refresh' => 'રિફ્રેશ કરો',
+        'show_10' => 'બતાવો (10)',
+        'show_25' => 'બતાવો (25)',
+        'show_50' => 'બતાવો (50)',
+        'show_100' => 'બતાવો (100)',
+    ],
+
+    'table' => [
+        'mail_driver' => 'મેઇલ ડ્રાઇવર',
+        'company' => 'કંપની',
+        'mail_status' => 'મેઇલ સ્થિતિ',
+        'mail_host' => 'મેઇલ હોસ્ટ',
+        'mail_port' => 'મેઇલ પોર્ટ',
+        'mail_username' => 'મેઇલ યુઝરનેમ',
+        'mail_from_address' => 'મેઇલ મોકલનાર સરનામું',
+        'mail_from_name' => 'મેઇલ મોકલનાર નામ',
+        'updated_at' => 'અપડેટ તારીખ',
+        'actions' => 'ક્રિયાઓ',
+    ],
+
+    'modal' => [
+        'create_title' => 'આઉટગોઇંગ મેઇલ બનાવો',
+        'edit_title' => 'આઉટગોઇંગ મેઇલ સંપાદિત કરો',
+        'close' => 'બંધ કરો',
+        'create' => 'બનાવો',
+        'update' => 'અપડેટ કરો',
+    ],
+
+    'fields' => [
+        'mail_enabled' => 'ઇમેઇલ સેવા સ્થિતિ',
+        'company_id' => 'કંપની',
+        'mail_from_name' => 'મોકલનાર નામ',
+        'mail_driver' => 'ઇમેઇલ ડ્રાઇવર',
+        'mail_host' => 'ઇમેઇલ હોસ્ટ',
+        'mail_port' => 'ઇમેઇલ પોર્ટ',
+        'mail_username' => 'ઇમેઇલ એકાઉન્ટ',
+        'mail_password' => 'ઇમેઇલ પાસવર્ડ',
+        'mail_encryption' => 'ઇમેઇલ એન્ક્રિપ્શન',
+        'mail_from_address' => 'મોકલનાર ઇમેઇલ સરનામું',
+    ],
+
+    'placeholders' => [
+        'company_id' => 'કંપની પસંદ કરો',
+        'mail_from_name' => 'મોકલનાર નામ દાખલ કરો',
+        'mail_driver' => 'ઇમેઇલ ડ્રાઇવર દાખલ કરો',
+        'mail_host' => 'ઇમેઇલ હોસ્ટ દાખલ કરો',
+        'mail_port' => 'ઇમેઇલ પોર્ટ દાખલ કરો',
+        'mail_username' => 'ઇમેઇલ એકાઉન્ટ દાખલ કરો',
+        'mail_password' => 'ઇમેઇલ પાસવર્ડ દાખલ કરો',
+        'mail_from_address' => 'મોકલનાર ઇમેઇલ દાખલ કરો',
+    ],
+
+    'options' => [
+        'enable' => 'સક્રિય કરો',
+        'disable' => 'નિષ્ક્રિય કરો',
+        'ssl' => 'SSL',
+        'tls' => 'TLS',
+        'false' => 'ખોટું',
+    ],
+
+    'messages' => [
+        'unable_to_display' => 'વિગતો દર્શાવી શકાઈ નથી',
+        'unable_to_create' => 'આઉટગોઇંગ મેઇલ બનાવી શકાઈ નથી.',
+        'unable_to_delete' => 'વિગતો કાઢી શકાઈ નથી',
+        'not_editable' => 'સંપાદિત કરી શકાય તેમ નથી',
+        'mail_created' => 'આઉટગોઇંગ મેઇલ સફળતાપૂર્વક બનાવવામાં આવી.',
+        'mail_updated' => 'આઉટગોઇંગ મેઇલ સફળતાપૂર્વક અપડેટ થઈ.',
+        'mail_deleted' => 'આઉટગોઇંગ મેઇલ સફળતાપૂર્વક કાઢી નાખી.',
+        'something_went_wrong' => 'કંઈક ખોટું થયું.',
+        'delete_record' => 'શું તમે ખરેખર આ આઉટગોઇંગ મેઇલ કાઢી નાખવા માંગો છો?',
+        'search_invalid' => 'કૃપા કરીને માન્ય શોધ મૂલ્ય દાખલ કરો.',
+        'insufficient_permission' => 'પર્યાપ્ત પરવાનગી નથી.',
+        'fail' => 'અસફળ',
+    ],
+
+    'actions' => [
+        'edit' => 'સંપાદિત કરો',
+        'delete' => 'કાઢી નાખો',
+    ],
+
+    'validation' => [
+        'company_required' => 'કૃપા કરીને કંપની પસંદ કરો.',
+        'mail_driver_required' => 'કૃપા કરીને ઇમેઇલ ડ્રાઇવર દાખલ કરો.',
+        'mail_enabled_required' => 'કૃપા કરીને ઇમેઇલ સેવા સ્થિતિ પસંદ કરો.',
+        'mail_host_required' => 'કૃપા કરીને ઇમેઇલ હોસ્ટ દાખલ કરો.',
+        'mail_port_required' => 'કૃપા કરીને ઇમેઇલ પોર્ટ દાખલ કરો.',
+        'mail_username_required' => 'કૃપા કરીને ઇમેઇલ એકાઉન્ટ દાખલ કરો.',
+        'mail_username_email' => 'કૃપા કરીને માન્ય ઇમેઇલ દાખલ કરો.',
+        'mail_password_required' => 'કૃપા કરીને ઇમેઇલ પાસવર્ડ દાખલ કરો.',
+        'mail_encryption_required' => 'કૃપા કરીને ઇમેઇલ એન્ક્રિપ્શન પસંદ કરો.',
+        'mail_from_address_required' => 'કૃપા કરીને મોકલનાર ઇમેઇલ દાખલ કરો.',
+        'mail_from_address_email' => 'કૃપા કરીને માન્ય મોકલનાર ઇમેઇલ દાખલ કરો.',
+        'mail_from_name_required' => 'કૃપા કરીને મોકલનાર નામ દાખલ કરો.',
+    ],
+
+    'js' => [
+        'add_new_mail' => 'નવી મેઇલ ઉમેરો',
+        'create_mail' => 'આઉટગોઇંગ મેઇલ બનાવો',
+        'edit_mail' => 'સંપાદિત કરો',
+        'edit_outmail' => 'આઉટગોઇંગ મેઇલ સંપાદિત કરો',
+        'delete' => 'કાઢી નાખો',
+        'delete_record' => 'શું તમે ખાતરી કરો છો?',
+        'search' => 'શોધો',
+        'refresh_list' => 'રિફ્રેશ કરો',
+        'press_enter_with_search' => 'શોધવા માટે Enter દબાવો.',
+        'something_went_wrong' => 'કંઈક ખોટું થયું.',
+        'enable' => 'સક્રિય કરો',
+        'disable' => 'નિષ્ક્રિય કરો',
+        'company' => 'કંપની',
+        'update' => 'અપડેટ કરો',
+        'create' => 'બનાવો',
+        'select_company' => 'કંપની પસંદ કરો',
+        'status_enabled' => 'સક્રિય',
+        'status_disabled' => 'નિષ્ક્રિય',
+    ],
+];

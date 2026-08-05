@@ -1,0 +1,70 @@
+{
+    "status": "success",
+    "msg": "Data fetch successfully !",
+    "recordsTotal": 2,
+    "recordsFiltered": 2,
+    "totaltask": 2,
+    "completedtask": 2,
+    "data": [
+        {
+            "0": null,
+            "progress": {
+                "per": 33,
+                "status": "On Time",
+                "iconClass": "fa-thumbs-up",
+                "borderColor": "#398D5F"
+            },
+            "task_no": 2612,
+            "task_encrypt_id": "eyJpdiI6InlwaGJIamtjT0syRWluWHI2MDNQbFE9PSIsInZhbHVlIjoiZWVZYVJyVUJiMENobnJCZThzcmFDZz09IiwibWFjIjoiNTY1YWM1MjBjZDExYzA3YWQyN2MzN2M4NjM2MjBiMGI2OWY1N2NlMmY0NWIwNjgyMGVlYTI0NTRhMzQ1NjA4MCIsInRhZyI6IiJ9",
+            "task_name": "Laptop Cooling Pad 01",
+            "status": "Completed",
+            "status_id": 7,
+            "start_date": "12 Apr 2026 04:30 PM",
+            "due_date": "15 Apr 2026 04:00 PM",
+            "end_date": "13 Apr 2026 05:18 PM",
+            "assigned_to": "anilk superAdmin",
+            "assign_to_avatar": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/imgs\/profile-75.jpg",
+            "updated_at": "13 Apr 2026 05:18 PM",
+            "assigned_to_id": 4501,
+            "description": "testing",
+            "priority": "Urgency",
+            "cost": "0.00",
+            "created_at": "12 Apr 2026 04:30 PM",
+            "creator": "KanchanLonarkarGreenitco",
+            "creator_id": 694,
+            "creator_avatar": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/imgs\/profile-75.jpg",
+            "change_by_module": 3,
+            "is_visible_user": 1
+        },
+        {
+            "0": null,
+            "progress": {
+                "per": 33,
+                "status": "On Time",
+                "iconClass": "fa-thumbs-up",
+                "borderColor": "#398D5F"
+            },
+            "task_no": 2613,
+            "task_encrypt_id": "eyJpdiI6Ikd6dVNFUHFHYXBSR0VnVVhpcFBGZ1E9PSIsInZhbHVlIjoiSE54c2dJWWxyZEU0MTRFWlowWnFIdz09IiwibWFjIjoiYjdkOWQ0ZmY5Y2I4YzUyMzIyZjRlZTgwOWVlMjhjMzBmODNkMjIxYWI0MTIzMWNjMTJmM2RiNDQ4NDU3OWJjMyIsInRhZyI6IiJ9",
+            "task_name": "Performance Testing",
+            "status": "Completed",
+            "status_id": 7,
+            "start_date": "12 Apr 2026 04:30 PM",
+            "due_date": "15 Apr 2026 04:00 PM",
+            "end_date": "13 Apr 2026 05:19 PM",
+            "assigned_to": "anilk superAdmin",
+            "assign_to_avatar": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/imgs\/profile-75.jpg",
+            "updated_at": "13 Apr 2026 05:19 PM",
+            "assigned_to_id": 4501,
+            "description": "Testing",
+            "priority": "Urgency",
+            "cost": "0.00",
+            "created_at": "12 Apr 2026 04:30 PM",
+            "creator": "KanchanLonarkarGreenitco",
+            "creator_id": 694,
+            "creator_avatar": "https:\/\/itassetmanagementsoftware.com\/rolepermission\/imgs\/profile-75.jpg",
+            "change_by_module": 3,
+            "is_visible_user": 1
+        }
+    ]
+}

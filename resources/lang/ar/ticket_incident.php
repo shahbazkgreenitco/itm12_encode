@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'ticket_incident' => [
+        'title' => 'حادثة التذكرة',
+        'print' => 'طباعة',
+        'subject' => 'الموضوع',
+        'company' => 'الشركة',
+        'ticket_id' => 'معرف التذكرة',
+        'dept_id' => 'القسم المتأثر',
+        'created_at' => 'تم الإنشاء بواسطة',
+        'priority' => 'الأولوية',
+        'location' => 'الموقع',
+        'internal_place' => 'الموقع الداخلي',
+        'problem_category' => 'فئة المشكلة',
+        'sub_category' => 'الفئة الفرعية للمشكلة',
+        'status' => 'الحالة',
+        'incident_created_date_time' => 'تاريخ ووقت إنشاء الحادثة',
+        'incident_end_date_time' => 'تاريخ ووقت انتهاء الحادثة',
+        'service_impacted' => 'الخدمة المتأثرة',
+        'sla_breaches' => 'انتهاكات اتفاقية مستوى الخدمة (SLA)',
+        'content' => 'المحتوى',
+        'rca' => 'تحليل السبب الجذري (RCA)',
+        'why_incident_happen' => 'لماذا حدثت الحادثة',
+        'preventive_measure_taken' => 'الإجراءات الوقائية المتخذة',
+        'show' => 'عرض',
+        'search' => 'بحث...',
+        'incident_not_exist'        => 'الحادثة غير موجودة.',
+        'incident_detail_not_exist' => 'تفاصيل الحادثة غير موجودة.',
+    ],
+];

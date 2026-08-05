@@ -1,0 +1,189 @@
+/* ===== CSS VARIABLES ===== */
+:root {
+    --app-bg: #f8f9fa;
+    --app-surface: #ffffff;
+    --app-border: #dee2e6;
+    --app-text: #212529;
+    --sidebar-bg: #ffffff;
+    --header-bg: #EFF2FA;
+}
+
+[data-bs-theme="dark"] {
+    --app-bg: #151515;
+    --app-surface: #111827;
+    --app-border: #1f2933;
+    --app-text: #e5e7eb;
+    --sidebar-bg: #020617;
+    --header-bg: #111111;
+}
+
+/* ===== BASE STYLES ===== */
+body {
+    background: var(--app-bg);
+    color: var(--app-text);
+}
+
+.app-sidebar {
+    background: var(--sidebar-bg);
+}
+
+.app-header {
+    background: var(--header-bg);
+}
+
+.app-header,
+.app-footer {
+    background-color: var(--header-bg);
+    color: var(--app-text);
+    /* border-bottom: 1px solid var(--app-border); */
+}
+
+.app-footer {
+    border-top: 1px solid var(--app-border);
+}
+
+/* ===== DARK MODE OVERRIDES ===== */
+[data-bs-theme="dark"] {
+    color: #ffffff !important;
+}
+
+/* Dark mode text elements */
+[data-bs-theme="dark"] p,
+[data-bs-theme="dark"] span,
+[data-bs-theme="dark"] div,
+[data-bs-theme="dark"] li,
+[data-bs-theme="dark"] label,
+[data-bs-theme="dark"] small,
+[data-bs-theme="dark"] strong,
+[data-bs-theme="dark"] th,
+[data-bs-theme="dark"] td {
+    color: #ffffff;
+}
+
+/* ===== SIDEBAR DARK MODE ===== */
+/* Sidebar containers */
+[data-bs-theme="dark"] .sidebar-mini,
+[data-bs-theme="dark"] .collapsed-sidebar,
+[data-bs-theme="dark"] .sidebar-expanded,
+[data-bs-theme="dark"] .expanded-content {
+    background-color: #020617 !important;
+    color: #e5e7eb !important;
+}
+
+[data-bs-theme="dark"] .mini-sidebar {
+    background: #272727;
+}
+
+[data-bs-theme="dark"] .expanded-sidebar {
+    background-color: #191919;
+    color: #ffff;
+    border: 1px solid #2A2A2A;
+}
+
+/* Sidebar links */
+[data-bs-theme="dark"] .mini-sidebar .nav-link,
+[data-bs-theme="dark"] .expanded-sidebar .nav-link,
+[data-bs-theme="dark"] .expanded-menu>li>a {
+    color: #ffffff;
+}
+
+/* Sidebar link states */
+[data-bs-theme="dark"] .mini-sidebar .nav-link:hover,
+[data-bs-theme="dark"] .expanded-sidebar .nav-link:hover,
+[data-bs-theme="dark"] .mini-sidebar .nav-link.active,
+[data-bs-theme="dark"] .expanded-sidebar .nav-link.active,
+[data-bs-theme="dark"] .expanded-menu li a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
+[data-bs-theme="dark"] .expanded-menu>li.has-submenu.active>a {
+    background: #292929;
+}
+
+[data-bs-theme="dark"] .expanded-menu li svg {
+    color: #ffffff;
+}
+
+/* ===== COMPONENTS DARK MODE ===== */
+/* Buttons and containers */
+[data-bs-theme="dark"] .mati-ai-btn,
+[data-bs-theme="dark"] .search-container,
+[data-bs-theme="dark"] .status-row {
+    background: #2A2A2A;
+    border: none;
+}
+
+[data-bs-theme="dark"] .mati-ai-text,
+[data-bs-theme="dark"] .status-row,
+[data-bs-theme="dark"] .dropdown-button span,
+[data-bs-theme="dark"] .status-label {
+    color: #757575;
+}
+
+/* Dropdowns */
+[data-bs-theme="dark"] .dropdown-section {
+    color: #2A2A2A;
+}
+
+[data-bs-theme="dark"] .dropdown-menu.open {
+    background-color: #2A2A2A;
+    border: 1px solid #020617;
+}
+
+[data-bs-theme="dark"] .dropdown-menu .dropdown-item,
+[data-bs-theme="dark"] .submenu a {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .dropdown-item:hover {
+    background: #222222;
+    color: white;
+}
+
+/* Logo toggle */
+[data-bs-theme="dark"] .brand_logo .light-logo {
+    display: block;
+}
+
+[data-bs-theme="dark"] .brand_logo .dark-logo {
+    display: none;
+}
+
+[data-bs-theme="light"] .brand_logo .light-logo {
+    display: none;
+}
+
+[data-bs-theme="light"] .brand_logo .dark-logo {
+    display: block;
+}
+
+/* Sidebar extender */
+[data-bs-theme="dark"] .sidebar-extender {
+    background: #4a4343;
+    border: none;
+    box-shadow: none;
+}
+
+[data-bs-theme="dark"] .sidebar-extender svg {
+    color: #ffffff;
+}
+
+/* Search */
+[data-bs-theme="dark"] .search-icon {
+    color: #898989;
+}
+
+[data-bs-theme="dark"] .search-input {
+    border-left: 2px solid rgba(219, 219, 219, 0.1);
+}
+
+[data-bs-theme="dark"] .search-input::placeholder {
+    color: #757575;
+    opacity: 0.6;
+}
+
+/* Mini icon active state */
+[data-bs-theme="dark"] .mini-icon.active {
+    background: linear-gradient(180deg, #2A2A2A 100%, #000000 0%);
+}

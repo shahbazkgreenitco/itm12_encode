@@ -1,0 +1,13 @@
+*
+!.gitignore
+!accessories/
+!avatar/
+!bulk_actions/
+!bulk_documents/
+!device_audits/
+!devices/
+!documents/
+!models/
+!tickets/
+!larecipe/
+!project

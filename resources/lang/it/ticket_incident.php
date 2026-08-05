@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'ticket_incident' => [
+        'title' => 'Incidente del Ticket',
+        'print' => 'Stampa',
+        'subject' => 'Oggetto',
+        'company' => 'Azienda',
+        'ticket_id' => 'ID Ticket',
+        'dept_id' => 'Reparto Interessato',
+        'created_at' => 'Creato da',
+        'priority' => 'Priorità',
+        'location' => 'Posizione',
+        'internal_place' => 'Posizione Interna',
+        'problem_category' => 'Categoria del Problema',
+        'sub_category' => 'Sottocategoria del Problema',
+        'status' => 'Stato',
+        'incident_created_date_time' => 'Data e Ora di Creazione dell’Incidente',
+        'incident_end_date_time' => 'Data e Ora di Fine dell’Incidente',
+        'service_impacted' => 'Servizio Interessato',
+        'sla_breaches' => 'Violazioni SLA',
+        'content' => 'Contenuto',
+        'rca' => 'Analisi della Causa Principale (RCA)',
+        'why_incident_happen' => 'Perché si è verificato l’incidente',
+        'preventive_measure_taken' => 'Misure Preventive Adottate',
+        'show' => 'Mostra',
+        'search' => 'Cerca...',
+        'incident_not_exist'        => 'L\'incidente non esiste.',
+        'incident_detail_not_exist' => 'I dettagli dell\'incidente non esistono.',
+    ],
+];

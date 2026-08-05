@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'failed_jobs' => 'નિષ્ફળ નોકરીઓ',
+    'payload' => 'પેલોડ',
+    'exception' => 'અપવાદ',
+    'failed_at' => 'નિષ્ફળ થયેલ તારીખ',
+    'search' => 'નિષ્ફળ નોકરીઓ શોધો',
+    'filter' => 'ફિલ્ટર',
+    'refresh_list' => 'યાદી તાજી કરો',
+    'download_report' => 'રિપોર્ટ ડાઉનલોડ કરો',
+    'show_10' => '10 બતાવો',
+    'show_25' => '25 બતાવો',
+    'show_50' => '50 બતાવો',
+    'show_100' => '100 બતાવો',
+    'active_filters' => 'સક્રિય ફિલ્ટર્સ',
+    'advance_filter' => 'અદ્યતન ફિલ્ટર',
+    'filter_by_date' => 'તારીખ પ્રમાણે ફિલ્ટર કરો',
+    'filter_by_daterange' => 'તારીખની શ્રેણી',
+    'no_filter' => 'કોઈ ફિલ્ટર નથી',
+    'clear' => 'સાફ કરો',
+    'apply' => 'લાગુ કરો',
+    'close' => 'બંધ કરો',
+    'select_date_range' => 'તારીખની શ્રેણી પસંદ કરો',
+    'something_went_wrong' => 'કંઈક ખોટું થયું. કૃપા કરીને ફરી પ્રયાસ કરો.',
+    'please_enter_valid_search' => 'કૃપા કરીને માન્ય શોધ શબ્દ દાખલ કરો.',
+    'press_enter_with_search' => 'શોધવા માટે Enter દબાવો',
+];

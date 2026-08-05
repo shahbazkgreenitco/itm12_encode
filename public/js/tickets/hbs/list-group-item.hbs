@@ -1,0 +1,234 @@
+{{!--
+<div class="list-group-item color-code-{{ d.color_code }}">
+    <div class="act_options">
+        <div>
+            <a href="{{ view_link }}" target="_blank"><i class="fa fa-eye"></i> View</a>
+            {{#if can_merge}}
+            <a href="#" class="add_to_merge" data-id="{{d.id}}"><i class="fa fa-code-fork"></i> Add to Merge</a>
+            {{/if}}
+        </div>
+    </div>
+    <div class="row">
+        {{#if d.is_starred}}
+        <div class="js-act-staring">
+            <i class="fa fa-star"></i>
+        </div>
+        {{/if}}
+        <div class="{{ feedback }}"></div>
+        <div class="col-xss-chkbox pad-no pull-left">
+            <div class="chkbx row_selector">
+                <span class="chkbx-tk"></span>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <div class="user-block-info">
+                <p>
+                    <img class="img-md img-circle" src="{{ profile_img }}" alt="Profile Image" />
+                </p>
+                <p class="user-full-name">{{ d.creator_name }}</p>
+                <p class="user-full-name">{{ d.creator_company }}</p>
+                <p class="user-full-name">{{ d.creator_location }}</p>
+            </div>
+            {{#if d.spam}}
+            <div class="text-center">
+                <span class="label label-spam text-bold">Spam</span>
+            </div>
+            {{/if}}
+        </div>
+        <div class="col-xs-6 col-md-6 col-sm-6">
+            <div class="ticket-info">
+                <p class="subj {{#if is_merged_sec}} merge_sec {{/if}}">
+                    <a href="{{ view_link }}" target="_blank">{{ d.subject }}</a>
+                    {{#if d.is_merge_primary}}
+                    <span class="label-merged-primary">Merge Primary</span>
+                    {{/if}}
+                    {{#if is_merged_sec}}
+                    <span class="label-merged">Merged - <a href="{{ merge_primary_link }}">#{{ d.merge_primary }}</a></span>
+                    {{/if}}
+                </p>
+                <table class="table-striped table">
+                    <colgroup>
+                        <col style="width: 100px" />
+                        <col/>
+                        <col style="width: 80px" />
+                        <col/>
+                    </colgroup>
+                    <tr>
+                        <td class="text-red1">Ticket ID</td>
+                        <td><a href="{{ view_link }}">#{{ d.id }}</a></td>
+                        <td class="text-red1">Problem Category</td>
+                        <td>{{ d.prob_cat }}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-red1">Department</td>
+                        <td>{{ d.dep_name }}</td>
+                        <td class="text-red1">Company</td>
+                        <td>{{ d.comp_name }}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-red1">Logged By</td>
+                        <td>
+                            {{#unless via_email}}
+                            {{ d.created_by_name }}
+                            {{/unless}}
+                            {{#if via_email}}
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                E-Mail 
+                            {{/if}}
+                        </td>
+                        <td class="text-red1">{{#unless hide_fields.tat}} TAT {{/unless}}</td>
+                        <td>{{#unless hide_fields.tat}} {{ d.tat_hrs }} {{/unless}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-red1">Created On</td>
+                        <td>{{ d.created_at_format }}</td>
+                        <td class="text-red1">Updated On</td>
+                        <td>{{ d.updated_at_format }}</td>
+                    </tr>
+                    {{#if is_sub_cat}}
+                    <tr>
+                        <td class="text-red1">Sub Category</td>
+                        <td>{{ d.sub_cat }}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    {{/if}}
+                    {{#if d.device_id}}
+                    <tr>
+                        <td class="text-red1">Related Device</td>
+                        <td>{{ d.asset_tag }}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    {{/if}}
+                </table>
+            </div>
+        </div>
+        <div class="col-xs-3dt5 col-md-3dt5 col-sm-3dt5">
+            <div class="ticket-status">
+                <table class="table">
+                    <colgroup>
+                        <col style="width: 100px" />
+                        <col/>
+                    </colgroup>
+                    <tr>
+                        <td class="text-red1">Status</td>
+                        <td>{{ d.status }}</td>
+                    </tr>
+                    {{#unless hide_fields.priority}}
+                    <tr>
+                        <td class="text-red1">Priority</td>
+                        <td><span class="priority priority priority{{ d.priority }}"></span>{{ d.priority }}</td>
+                    </tr>
+                    {{/unless}}
+                    {{#unless hide_fields.assigned_to}}
+                    <tr>
+                        <td class="text-red1">Assigned To</td>
+                        <td>{{ d.assigned_to_name }}</td>
+                    </tr>
+                    {{/unless}}
+                    {{{ status_div }}}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+--}}
+
+<div class="list-group-item color-code-{{ d.color_code }}">
+    <div class="row mar-btm-6">
+        <div class="col-md-5">
+            <span class="tkt_sub {{#if is_merged_sec}} merge_sec {{/if}}">
+                {{#if d.is_starred}}
+                <div class="js-act-staring">
+                    <i class="fa fa-star"></i>
+                </div>
+                {{/if}}
+                <div class="{{ feedback }}"></div>
+                {{#if d.spam}}
+                <span class="label label-spam">{{ Spam_t }}</span>
+                {{/if}}
+                {{#if d.is_merge_primary}}
+                <span class="label-merged-primary">{{ Merge_Primary_t }}</span>
+                {{/if}}
+                {{#if is_merged_sec}}
+                <span class="label-merged">Merged - <a href="{{ merge_primary_link }}">#{{ d.merge_primary }}</a></span>
+                {{/if}}
+                <a href="{{ view_link }}" target="_blank">{{textMask 40 d.subject }}</a>
+            </span>
+        </div>
+        <div class="col-md-7 pad-no">
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="tkt_id">#{{ d.id }}</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="f-B">
+                        <i class="lgi-ico lgi-ico-status"></i>{{ d.status }}
+                    </span>
+                </div>
+                <div class="col-md-2">
+                    {{#unless hide_fields.priority}}
+                    <span class="f-B">
+                        <span class="priority priority priority{{ d.priority }}"></span>
+                        {{ d.priority }}
+                    </span>
+                    {{/unless}}
+                </div>
+                <div class="col-md-5">
+                    <div class="f-C">{{{ status_div1 }}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row options-cvrable">
+        <div class="col-md-3">
+            <p class="lgi-lbl-k">{{ Creator_Info_t }}:</p>
+            <div class="ubi" title="Creator">   
+                <img class="img-md img-circle" src="{{ profile_img }}" alt="Profile Image" />
+                <div class="ubi-content">
+                    <p class="f-A">{{ d.creator_name }}</p>
+                    <p class="f-C">
+                        {{#if via_email}}
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        {{/if}}
+                        {{concatWithSeparator "|" creator_info}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <p class="lgi-lbl-k">{{ Department_Info_t }}:</p>
+            <p class="f-A" title="Department"><i class="lgi-ico lgi-ico-department"></i>{{ d.dep_name }}</p>
+            <p class="f-C" title="Problem & Sub Categories"><i class="lgi-ico lgi-ico-problem"></i>{{concatWithSeparator "|" category_info}}</p>
+        </div>
+        <div class="col-md-2">
+            <p class="lgi-lbl-k">{{ CreatedUpdated_At_t }}:</p>
+            <p class="f-C" title="Ticket Created At"><i class="lgi-ico lgi-ico-created"></i>{{ d.created_at_format }}</p>
+            <p class="f-C" title="Ticket Updated At"><i class="lgi-ico lgi-ico-updated"></i>{{ d.updated_at_format }}</p>
+        </div>
+        <div class="col-md-3">
+            {{#unless hide_fields.assigned_to}}
+                {{#if assigned_to_avail}}
+                <p class="lgi-lbl-k">{{ Assgined_To_t }}:</p>
+                <div class="ubi" title="Assigned To">   
+                    <img class="img-md img-circle" src="{{ assigner_img }}" alt="Profile Image" />
+                    <div class="ubi-content">
+                        <p class="f-A">{{ d.assigned_to_name }}</p>
+                        <p class="f-C">{{ d.assigned_to_loc }}</p>
+                    </div>
+                </div>
+                {{/if}}
+            {{/unless}}
+        </div>
+        
+        <div class="act_options1">
+            <div class="act_options1_list">
+                <a href="{{ view_link }}" target="_blank"><i class="fa fa-eye"></i> {{ View_t }}</a>
+                {{#if can_merge}}
+                <a href="#" class="add_to_merge" data-id="{{d.id}}"><i class="fa fa-code-fork"></i> {{ Add_to_Merge_t }}</a>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>

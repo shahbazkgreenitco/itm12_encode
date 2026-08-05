@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'jobs' => 'Jobs',
+    'payload'                   => 'Payload',
+    'attempt'                   => 'Attempt',
+    'created_at'                => 'Created At',
+    'created_at_label'          => 'Created At', 
+    'search'                    => 'Search Jobs',
+    'filter'                    => 'Filter',
+    'refresh_list'              => 'Refresh List',
+    'download_report'           => 'Download Report',
+    'show_10'                   => 'Show 10',
+    'show_25'                   => 'Show 25',
+    'show_50'                   => 'Show 50',
+    'show_100'                  => 'Show 100',
+    'active_filters'            => 'Active filters',
+    'filter_by_date'            => 'Filter by Date',
+    'date_range'                => 'Date Range',
+    'no_filter'                 => 'No Filter',
+    'clear'                     => 'Clear',
+    'apply'                     => 'Apply',
+    'close'                     => 'Close',
+    'select_date_range'         => 'Select date range',
+    'something_went_wrong'      => 'Something went wrong. Please try again.',
+    'please_enter_valid_search' => 'Please enter a valid search term.',
+    'press_enter_with_search'   => 'Press Enter to search',
+    'select_the_department'     => 'Select the Department',
+    'filter_by_daterange'      => 'Filter by Date Range',
+    'advance_filter'            => 'Filter'
+];

@@ -1,0 +1,110 @@
+/* =========================================================
+   Bootstrap Datepicker v1.9.0 — Bootstrap 5 Compatibility
+   Fixes padding, table styles, and spacing issues
+   ========================================================= */
+
+.datepicker {
+    padding: 0 !important;
+    border-radius: .375rem;
+    font-size: .875rem;
+}
+
+.datepicker-dropdown {
+    min-width: auto !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.datepicker table {
+    margin: 0;
+    border-collapse: separate;
+}
+
+.datepicker table tr td,
+.datepicker table tr th {
+    width: 32px;
+    height: 32px;
+    padding: 4px !important;
+    text-align: center;
+    border-radius: .25rem;
+    border: none;
+}
+
+/* Header */
+.datepicker thead tr:first-child th,
+.datepicker tfoot tr th {
+    cursor: pointer;
+    padding: 6px !important;
+}
+
+.datepicker thead tr:first-child th:hover {
+    background: #e9ecef;
+}
+
+/* Days */
+.datepicker table tr td.day:hover,
+.datepicker table tr td.focused {
+    background: #e9ecef;
+    cursor: pointer;
+}
+
+/* Today */
+.datepicker table tr td.today,
+.datepicker table tr td.today:hover {
+    background-color: rgba(13, 110, 253, .15);
+    color: #0d6efd;
+}
+
+/* Selected */
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover {
+    background-color: #0d6efd !important;
+    color: #fff !important;
+}
+
+/* Disabled */
+.datepicker table tr td.disabled,
+.datepicker table tr td.disabled:hover {
+    color: #adb5bd;
+    cursor: not-allowed;
+    background: none;
+}
+
+/* Old / New month days */
+.datepicker table tr td.old,
+.datepicker table tr td.new {
+    color: #adb5bd;
+}
+
+/* Clear Bootstrap table interference */
+.datepicker table> :not(caption)>*>* {
+    padding: 0 !important;
+    background: transparent;
+    border-bottom-width: 0;
+}
+
+/* Months & Years view */
+.datepicker-months span,
+.datepicker-years span {
+    display: inline-block;
+    width: 23%;
+    margin: 1%;
+    padding: .5rem 0;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.datepicker-months span:hover,
+.datepicker-years span:hover {
+    background: #e9ecef;
+}
+
+.datepicker-months span.active,
+.datepicker-years span.active {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+/* RTL support */
+.datepicker-rtl {
+    direction: rtl;
+}

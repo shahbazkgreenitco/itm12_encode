@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'failed_jobs' => 'الوظائف الفاشلة',
+    'payload' => 'الحمولة',
+    'exception' => 'الاستثناء',
+    'failed_at' => 'تاريخ الفشل',
+    'search' => 'البحث في الوظائف الفاشلة',
+    'filter' => 'تصفية',
+    'refresh_list' => 'تحديث القائمة',
+    'download_report' => 'تنزيل التقرير',
+    'show_10' => 'عرض 10',
+    'show_25' => 'عرض 25',
+    'show_50' => 'عرض 50',
+    'show_100' => 'عرض 100',
+    'active_filters' => 'الفلاتر النشطة',
+    'advance_filter' => 'تصفية متقدمة',
+    'filter_by_date' => 'التصفية حسب التاريخ',
+    'filter_by_daterange' => 'نطاق التاريخ',
+    'no_filter' => 'بدون تصفية',
+    'clear' => 'مسح',
+    'apply' => 'تطبيق',
+    'close' => 'إغلاق',
+    'select_date_range' => 'حدد نطاق التاريخ',
+    'something_went_wrong' => 'حدث خطأ ما. يرجى المحاولة مرة أخرى.',
+    'please_enter_valid_search' => 'يرجى إدخال كلمة بحث صحيحة.',
+    'press_enter_with_search' => 'اضغط Enter للبحث',
+];

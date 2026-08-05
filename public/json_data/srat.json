@@ -1,0 +1,156 @@
+{
+    "recordsTotal": 44,
+    "recordsFiltered": 44,
+    "data": [
+        {
+            "a": {
+                "id": 7,
+                "name": "Team Approvals",
+                "description": "Level by level approval",
+                "required_minimum_approvals": 0,
+                "hierarchy_approval_id": 1,
+                "company_name": "Greenitco Technologies",
+                "comp_id": 1,
+                "hierarchy_approval": "Level By Level",
+                "member_count": 2,
+                "created_at": "19 Aug 2025 05:33 PM",
+                "updated_at": "19 Aug 2025 05:33 PM"
+            }
+        },
+        {
+            "a": {
+                "id": 14,
+                "name": "Team Minimum Approvals",
+                "description": "Minimum approvals",
+                "required_minimum_approvals": 1,
+                "hierarchy_approval_id": 2,
+                "company_name": "Greenitco Technologies",
+                "comp_id": 1,
+                "hierarchy_approval": "Minimum Approval",
+                "member_count": 3,
+                "created_at": "20 Aug 2025 03:28 PM",
+                "updated_at": "21 Aug 2025 01:44 PM"
+            }
+        },
+        {
+            "a": {
+                "id": 15,
+                "name": "QA_GroupApproval",
+                "description": "group approval",
+                "required_minimum_approvals": 0,
+                "hierarchy_approval_id": 3,
+                "company_name": "Greenitco Technologies",
+                "comp_id": 1,
+                "hierarchy_approval": "Group Approval",
+                "member_count": 5,
+                "created_at": "22 Aug 2025 02:02 PM",
+                "updated_at": "22 Aug 2025 02:02 PM"
+            }
+        },
+        {
+            "a": {
+                "id": 17,
+                "name": "QA_LoacationApproval",
+                "description": "Location approval",
+                "required_minimum_approvals": 0,
+                "hierarchy_approval_id": 5,
+                "company_name": "Greenitco Technologies",
+                "comp_id": 1,
+                "hierarchy_approval": "Location Approval",
+                "member_count": 4,
+                "created_at": "22 Aug 2025 02:08 PM",
+                "updated_at": "22 Aug 2025 02:08 PM"
+            }
+        },
+        {
+            "a": {
+                "id": 18,
+                "name": "QA-ManagerApprvl",
+                "description": "Manger approvl",
+                "required_minimum_approvals": 0,
+                "hierarchy_approval_id": 4,
+                "company_name": "Greenitco Technologies",
+                "comp_id": 1,
+                "hierarchy_approval": "Manager Approval",
+                "member_count": null,
+                "created_at": "22 Aug 2025 03:29 PM",
+                "updated_at": "22 Aug 2025 03:29 PM"
+            }
+        },
+        {
+            "a": {
+                "id": 19,
+                "name": "QA_DepartmentHeadApproval",
+                "description": "department head approval",
+                "required_minimum_approvals": 1,
+                "hierarchy_approval_id": 11,
+                "company_name": "Greenitco Technologies",
+                "comp_id": 1,
+                "hierarchy_approval": "Department Head Approval",
+                "member_count": null,
+                "created_at": "22 Aug 2025 05:32 PM",
+                "updated_at": "22 Aug 2025 05:40 PM"
+            }
+        },
+        {
+            "a": {
+                "id": 20,
+                "name": "New Manger Approval",
+                "description": "New Manger Approval",
+                "required_minimum_approvals": 1,
+                "hierarchy_approval_id": 4,
+                "company_name": "Greenitco Technologies",
+                "comp_id": 1,
+                "hierarchy_approval": "Manager Approval",
+                "member_count": null,
+                "created_at": "15 Sep 2025 07:46 PM",
+                "updated_at": "15 Sep 2025 07:51 PM"
+            }
+        },
+        {
+            "a": {
+                "id": 21,
+                "name": "IT Support - Group Approval",
+                "description": "IT Support - Group Approval",
+                "required_minimum_approvals": 0,
+                "hierarchy_approval_id": 3,
+                "company_name": "Greenitco Technologies",
+                "comp_id": 1,
+                "hierarchy_approval": "Group Approval",
+                "member_count": 3,
+                "created_at": "19 Sep 2025 03:46 PM",
+                "updated_at": "19 Sep 2025 03:46 PM"
+            }
+        },
+        {
+            "a": {
+                "id": 22,
+                "name": "sanjay",
+                "description": "testing",
+                "required_minimum_approvals": 0,
+                "hierarchy_approval_id": 4,
+                "company_name": "Greenitco Technologies",
+                "comp_id": 1,
+                "hierarchy_approval": "Manager Approval",
+                "member_count": null,
+                "created_at": "23 Sep 2025 05:18 PM",
+                "updated_at": "23 Sep 2025 05:18 PM"
+            }
+        },
+        {
+            "a": {
+                "id": 24,
+                "name": "testgt",
+                "description": "ghgh",
+                "required_minimum_approvals": 0,
+                "hierarchy_approval_id": 3,
+                "company_name": "Greenitco Technologies",
+                "comp_id": 1,
+                "hierarchy_approval": "Group Approval",
+                "member_count": 2,
+                "created_at": "27 Sep 2025 04:40 PM",
+                "updated_at": "27 Sep 2025 04:40 PM"
+            }
+        }
+    ]
+}

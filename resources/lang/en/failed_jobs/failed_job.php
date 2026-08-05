@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'failed_jobs'               => 'Failed Jobs',
+    'payload'                   => 'Payload',
+    'exception'                 => 'Exception',
+    'failed_at'                 => 'Failed At',
+    'search'                    => 'Search Failed Jobs',
+    'filter'                    => 'Filter',
+    'refresh_list'              => 'Refresh List',
+    'download_report'           => 'Download Report',
+    'show_10'                   => 'Show 10',
+    'show_25'                   => 'Show 25',
+    'show_50'                   => 'Show 50',
+    'show_100'                  => 'Show 100',
+    'active_filters'            => 'Active filters',
+    'advance_filter'            => 'Advance Filter',
+    'filter_by_date'            => 'Filter by Date',
+    'filter_by_daterange'       => 'Date Range',
+    'no_filter'                 => 'No Filter',
+    'clear'                     => 'Clear',
+    'apply'                     => 'Apply',
+    'close'                     => 'Close',
+    'select_date_range'         => 'Select date range',
+    'something_went_wrong'      => 'Something went wrong. Please try again.',
+    'please_enter_valid_search' => 'Please enter a valid search term.',
+    'press_enter_with_search'   => 'Press Enter to search',
+];

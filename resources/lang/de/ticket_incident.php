@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'ticket_incident' => [
+        'title' => 'Ticketvorfall',
+        'print' => 'Drucken',
+        'subject' => 'Betreff',
+        'company' => 'Unternehmen',
+        'ticket_id' => 'Ticket-ID',
+        'dept_id' => 'Betroffene Abteilung',
+        'created_at' => 'Erstellt von',
+        'priority' => 'Priorität',
+        'location' => 'Standort',
+        'internal_place' => 'Interner Ort',
+        'problem_category' => 'Problemkategorie',
+        'sub_category' => 'Unterproblemkategorie',
+        'status' => 'Status',
+        'incident_created_date_time' => 'Datum und Uhrzeit der Vorfallerstellung',
+        'incident_end_date_time' => 'Datum und Uhrzeit des Vorfallendes',
+        'service_impacted' => 'Betroffener Service',
+        'sla_breaches' => 'SLA-Verstöße',
+        'content' => 'Inhalt',
+        'rca' => 'Ursachenanalyse (RCA)',
+        'why_incident_happen' => 'Warum der Vorfall aufgetreten ist',
+        'preventive_measure_taken' => 'Ergriffene Präventionsmaßnahmen',
+        'show' => 'Anzeigen',
+        'search' => 'Suchen...',
+        'incident_not_exist'        => 'Der Vorfall existiert nicht.',
+        'incident_detail_not_exist' => 'Die Vorfalldetails existieren nicht.',
+    ],
+];

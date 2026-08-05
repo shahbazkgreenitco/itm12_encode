@@ -1,0 +1,123 @@
+<?php
+
+return [
+    'page' => [
+        'title' => 'Einstellungen für ausgehende E-Mails',
+        'add_new_mail' => 'Neue E-Mail hinzufügen',
+        'search_placeholder' => 'Suchen...',
+        'refresh' => 'Aktualisieren',
+        'show_10' => 'Anzeigen (10)',
+        'show_25' => 'Anzeigen (25)',
+        'show_50' => 'Anzeigen (50)',
+        'show_100' => 'Anzeigen (100)',
+    ],
+
+    'table' => [
+        'mail_driver' => 'E-Mail-Treiber',
+        'company' => 'Unternehmen',
+        'mail_status' => 'E-Mail-Status',
+        'mail_host' => 'E-Mail-Host',
+        'mail_port' => 'E-Mail-Port',
+        'mail_username' => 'E-Mail-Benutzername',
+        'mail_from_address' => 'Absenderadresse',
+        'mail_from_name' => 'Absendername',
+        'updated_at' => 'Aktualisiert am',
+        'actions' => 'Aktionen',
+    ],
+
+    'modal' => [
+        'create_title' => 'Ausgehende E-Mail erstellen',
+        'edit_title' => 'Ausgehende E-Mail bearbeiten',
+        'close' => 'Schließen',
+        'create' => 'Erstellen',
+        'update' => 'Aktualisieren',
+    ],
+
+    'fields' => [
+        'mail_enabled' => 'E-Mail-Dienststatus',
+        'company_id' => 'Unternehmen',
+        'mail_from_name' => 'Absendername',
+        'mail_driver' => 'E-Mail-Treiber',
+        'mail_host' => 'E-Mail-Host',
+        'mail_port' => 'E-Mail-Port',
+        'mail_username' => 'E-Mail-Konto',
+        'mail_password' => 'E-Mail-Passwort',
+        'mail_encryption' => 'E-Mail-Verschlüsselung',
+        'mail_from_address' => 'Absenderadresse',
+    ],
+
+    'placeholders' => [
+        'company_id' => 'Unternehmen auswählen',
+        'mail_from_name' => 'Absendername eingeben',
+        'mail_driver' => 'E-Mail-Treiber eingeben',
+        'mail_host' => 'E-Mail-Host eingeben',
+        'mail_port' => 'E-Mail-Port eingeben',
+        'mail_username' => 'E-Mail-Konto eingeben',
+        'mail_password' => 'E-Mail-Passwort eingeben',
+        'mail_from_address' => 'Absenderadresse eingeben',
+    ],
+
+    'options' => [
+        'enable' => 'Aktivieren',
+        'disable' => 'Deaktivieren',
+        'ssl' => 'SSL',
+        'tls' => 'TLS',
+        'false' => 'Falsch',
+    ],
+
+    'messages' => [
+        'unable_to_display' => 'Die angegebenen Details können nicht angezeigt werden',
+        'unable_to_create' => 'Ausgehende E-Mail konnte nicht erstellt werden.',
+        'unable_to_delete' => 'Die angegebenen Details konnten nicht gelöscht werden',
+        'not_editable' => 'Nicht bearbeitbar',
+        'mail_created' => 'Ausgehende E-Mail erfolgreich erstellt.',
+        'mail_updated' => 'Ausgehende E-Mail erfolgreich aktualisiert.',
+        'mail_deleted' => 'Ausgehende E-Mail erfolgreich gelöscht.',
+        'something_went_wrong' => 'Etwas ist schiefgelaufen.',
+        'delete_record' => 'Sind Sie sicher, dass Sie diese ausgehende E-Mail löschen möchten?',
+        'search_invalid' => 'Bitte geben Sie einen gültigen Suchwert ein.',
+        'insufficient_permission' => 'Unzureichende Berechtigung.',
+        'fail' => 'Fehlgeschlagen',
+    ],
+
+    'actions' => [
+        'edit' => 'Bearbeiten',
+        'delete' => 'Löschen',
+    ],
+
+    'validation' => [
+        'company_required' => 'Bitte wählen Sie ein Unternehmen aus.',
+        'mail_driver_required' => 'Bitte geben Sie den E-Mail-Treiber ein.',
+        'mail_enabled_required' => 'Bitte wählen Sie den E-Mail-Dienststatus aus.',
+        'mail_host_required' => 'Bitte geben Sie den E-Mail-Host ein.',
+        'mail_port_required' => 'Bitte geben Sie den E-Mail-Port ein.',
+        'mail_username_required' => 'Bitte geben Sie das E-Mail-Konto ein.',
+        'mail_username_email' => 'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
+        'mail_password_required' => 'Bitte geben Sie das E-Mail-Passwort ein.',
+        'mail_encryption_required' => 'Bitte wählen Sie die E-Mail-Verschlüsselung aus.',
+        'mail_from_address_required' => 'Bitte geben Sie die Absenderadresse ein.',
+        'mail_from_address_email' => 'Bitte geben Sie eine gültige Absenderadresse ein.',
+        'mail_from_name_required' => 'Bitte geben Sie den Absendernamen ein.',
+    ],
+
+    'js' => [
+        'add_new_mail' => 'Neue E-Mail hinzufügen',
+        'create_mail' => 'Ausgehende E-Mail erstellen',
+        'edit_mail' => 'Bearbeiten',
+        'edit_outmail' => 'Ausgehende E-Mail bearbeiten',
+        'delete' => 'Löschen',
+        'delete_record' => 'Sind Sie sicher, dass Sie diese ausgehende E-Mail löschen möchten?',
+        'search' => 'Suchen',
+        'refresh_list' => 'Aktualisieren',
+        'press_enter_with_search' => 'Drücken Sie Enter, um zu suchen.',
+        'something_went_wrong' => 'Etwas ist schiefgelaufen.',
+        'enable' => 'Aktivieren',
+        'disable' => 'Deaktivieren',
+        'company' => 'Unternehmen',
+        'update' => 'Aktualisieren',
+        'create' => 'Erstellen',
+        'select_company' => 'Unternehmen auswählen',
+        'status_enabled' => 'Aktiviert',
+        'status_disabled' => 'Deaktiviert',
+    ],
+];

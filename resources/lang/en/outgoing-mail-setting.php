@@ -1,0 +1,123 @@
+<?php
+
+return [
+    'page' => [
+        'title' => 'Outgoing Mail Setting',
+        'add_new_mail' => 'Add New Mail',
+        'search_placeholder' => 'Search...',
+        'refresh' => 'Refresh',
+        'show_10' => 'Show (10)',
+        'show_25' => 'Show (25)',
+        'show_50' => 'Show (50)',
+        'show_100' => 'Show (100)',
+    ],
+
+    'table' => [
+        'mail_driver' => 'Mail Driver',
+        'company' => 'Company',
+        'mail_status' => 'Mail Status',
+        'mail_host' => 'Mail Host',
+        'mail_port' => 'Mail Port',
+        'mail_username' => 'Mail Username',
+        'mail_from_address' => 'Mail From Address',
+        'mail_from_name' => 'Mail From Name',
+        'updated_at' => 'Updated At',
+        'actions' => 'Actions',
+    ],
+
+    'modal' => [
+        'create_title' => 'Create Outgoing Email',
+        'edit_title' => 'Edit Outgoing Email',
+        'close' => 'Close',
+        'create' => 'Create',
+        'update' => 'Update',
+    ],
+
+    'fields' => [
+        'mail_enabled' => 'Email Service Status',
+        'company_id' => 'Company',
+        'mail_from_name' => 'Email From Name',
+        'mail_driver' => 'Email Driver',
+        'mail_host' => 'Email Host',
+        'mail_port' => 'Email Port',
+        'mail_username' => 'Email Account',
+        'mail_password' => 'Email Password',
+        'mail_encryption' => 'Email Encryption',
+        'mail_from_address' => 'Email From Address',
+    ],
+
+    'placeholders' => [
+        'company_id' => 'Select Company',
+        'mail_from_name' => 'Enter Email From Name',
+        'mail_driver' => 'Enter Email Driver',
+        'mail_host' => 'Enter Email Host',
+        'mail_port' => 'Enter Email Port',
+        'mail_username' => 'Enter Email Account',
+        'mail_password' => 'Enter Email Password',
+        'mail_from_address' => 'Email From Address',
+    ],
+
+    'options' => [
+        'enable' => 'Enable',
+        'disable' => 'Disable',
+        'ssl' => 'SSL',
+        'tls' => 'TLS',
+        'false' => 'False',
+    ],
+
+    'messages' => [
+        'unable_to_display' => 'Unable to display given details',
+        'unable_to_create' => 'Unable to create outgoing mail.',
+        'unable_to_delete' => 'Unable to delete given details',
+        'not_editable' => 'Not Editable',
+        'mail_created' => 'Outgoing mail created successfully.',
+        'mail_updated' => 'Outgoing mail updated successfully.',
+        'mail_deleted' => 'Outgoing mail deleted successfully.',
+        'something_went_wrong' => 'Something went wrong.',
+        'delete_record' => 'Are you sure you want to delete this outgoing mail?',
+        'search_invalid' => 'Please enter a valid value for search.',
+        'insufficient_permission' => 'Insufficient permission.',
+        'fail' => 'Fail',
+    ],
+
+    'actions' => [
+        'edit' => 'Edit',
+        'delete' => 'Delete',
+    ],
+
+    'validation' => [
+        'company_required' => 'Please select a company.',
+        'mail_driver_required' => 'Please enter email driver.',
+        'mail_enabled_required' => 'Please select email service status.',
+        'mail_host_required' => 'Please enter email host.',
+        'mail_port_required' => 'Please enter email port.',
+        'mail_username_required' => 'Please enter email account.',
+        'mail_username_email' => 'Please enter a valid email account.',
+        'mail_password_required' => 'Please enter email password.',
+        'mail_encryption_required' => 'Please select email encryption.',
+        'mail_from_address_required' => 'Please enter email from address.',
+        'mail_from_address_email' => 'Please enter a valid email from address.',
+        'mail_from_name_required' => 'Please enter email from name.',
+    ],
+
+    'js' => [
+        'add_new_mail' => 'Add New Mail',
+        'create_mail' => 'Create Outgoing Email',
+        'edit_mail' => 'Edit',
+        'edit_outmail' => 'Edit Outgoing Email',
+        'delete' => 'Delete',
+        'delete_record' => 'Are you sure you want to delete this outgoing mail?',
+        'search' => 'Search',
+        'refresh_list' => 'Refresh',
+        'press_enter_with_search' => 'Press Enter to search.',
+        'something_went_wrong' => 'Something went wrong.',
+        'enable' => 'Enable',
+        'disable' => 'Disable',
+        'company' => 'Company',
+        'update' => 'Update',
+        'create' => 'Create',
+        'select_company' => 'Select Company',
+        'status_enabled' => 'Enabled',
+        'status_disabled' => 'Disabled',
+    ],
+];
