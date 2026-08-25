@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     'title' => 'Tassa personalizzata',
 
     'table_fields' => [
@@ -19,11 +20,11 @@ return [
         'filtered_from' => '(filtrati da _MAX_ elementi totali)',
         'no_matching_records' => 'Nessun record corrispondente trovato',
         'no_data' => 'Nessun dato disponibile nella tabella',
-        'search' => 'Cerca...',
         'length_menu' => 'Mostra _MENU_ elementi',
         'show' => 'Mostra',
         'refresh' => 'Aggiorna',
         'reload' => 'Ricarica',
+        'search' => 'Cerca...',
     ],
 
     'form' => [
@@ -75,10 +76,12 @@ return [
         'delete_element' => 'Sei sicuro di voler eliminare questo elemento della tassa personalizzata?',
         'name_required' => 'Il nome è obbligatorio.',
         'minimum_2_characters_required' => 'Sono richiesti almeno 2 caratteri.',
+        'maximum_100_characters_required' => 'Sono richiesti al massimo 100 caratteri.',
         'fail' => 'Errore',
         'deleted' => 'Eliminato!',
         'oops' => 'Ops!',
         'danger' => 'Pericolo',
         'success' => 'Successo',
+        'clean_text_only' => 'Sono consentiti solo lettere, numeri e caratteri limitati. I tag HTML non sono consentiti.',
     ],
 ];

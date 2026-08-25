@@ -24,6 +24,7 @@ return [
         'show' => 'عرض',
         'refresh' => 'تحديث',
         'reload' => 'إعادة تحميل',
+        'search' => 'بحث...',
     ],
 
     'form' => [
@@ -74,11 +75,14 @@ return [
         'departments_fetched_successfully' => 'تم جلب الأقسام بنجاح.',
         'delete_element' => 'هل أنت متأكد من حذف عنصر الضريبة المخصصة؟',
         'name_required' => 'الاسم مطلوب.',
+        'field_is_required' => 'هذا الحقل مطلوب.',
         'minimum_2_characters_required' => 'يجب أن يحتوي الاسم على حرفين على الأقل.',
+        'maximum_100_characters_required' => 'مطلوب بحد أقصى 100 حرف.',
         'fail' => 'فشل',
         'deleted' => 'تم الحذف!',
         'oops' => 'عذرًا!',
         'danger' => 'خطر',
         'success' => 'نجاح',
+        'clean_text_only' => 'يُسمح فقط بالأحرف والأرقام وبعض الأحرف المحددة. علامات HTML غير مسموح بها.',
     ],
 ];

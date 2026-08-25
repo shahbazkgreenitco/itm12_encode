@@ -9,7 +9,7 @@ var TicketTrigger = function (config) {
     el.mdl = $("#custom_tax_mdl");
     el.mdl.frm = $("#custom_tax_form");
     el.mdl.btnSubmit = $("#btnSubmit");
-    el.mdl.title = el.mdl.find("#modalTitle");
+    el.mdl.title = el.mdl.find(".modal-title");
 
     el.btn = {
         reload: ".btn-reload-list",
@@ -29,7 +29,7 @@ var TicketTrigger = function (config) {
             scrollX: true,
             scrollCollapse: true,
             dom: "lrtip",
-            order: [[1, "desc"]],
+            order: [[0, "desc"]],
             pageLength: defaultLength,
             lengthChange: false,
             searchDelay: 400,
@@ -47,7 +47,7 @@ var TicketTrigger = function (config) {
                 infoFiltered: t.config.translations.filtered_from || "(filtered from _MAX_ total entries)",
                 zeroRecords: t.config.translations.no_matching_records || "No matching records found",
                 emptyTable: t.config.translations.no_data || "No data available in table",
-                search: t.config.translations.search || "Search:",
+                search: t.config.translations.search_config || "Search:",
                 lengthMenu: t.config.translations.length_menu || "Show _MENU_ entries"
             },
             ajax: {
@@ -63,7 +63,7 @@ var TicketTrigger = function (config) {
             columns: [
                 {
                     data: null,
-                    orderable: false,
+                    // orderable: true,
                     searchable: false,
                     render: function (data, type, row, meta) {
                         if (type !== "display") return data;
@@ -108,24 +108,20 @@ var TicketTrigger = function (config) {
             },
             fnInitComplete: function () {
                 var api = this.api();
-                let timer;
+
                 $("#user-list-search")
-                .off("keyup")
-                .on("keyup", function () {
-                    clearTimeout(timer);
-
-                    let value = this.value;
-
-                    timer = setTimeout(() => {
-                    api.search(value).draw();
-                    }, 400);
-                });
+                    .off("keyup")
+                    .on("keyup", function (e) {
+                        if (e.key === "Enter" || e.keyCode === 13) {
+                            api.search(this.value).draw();
+                        }
+                    });
 
                 $(".amg-list-searchbar__icon")
-                .off("click")
-                .on("click", function () {
-                    api.search($("#user-list-search").val()).draw();
-                });
+                    .off("click")
+                    .on("click", function () {
+                        api.search($("#user-list-search").val()).draw();
+                    });
             },
             
         });
@@ -195,7 +191,7 @@ var TicketTrigger = function (config) {
             $(".customOptionsHolders").append(`
   <div class="optionElementDiv mt-3">
 
-    <div class="col-md-12 amg-form-field amg-form-field-row gap-2">
+    <div class="col-md-12 amg-form-field amg-form-field-row gap-2 custom_tax_field_error">
                         <div class="col-md-10">
       <div class="input-group">
         <input 
@@ -227,10 +223,12 @@ var TicketTrigger = function (config) {
 
             $input.rules("add", {
                 required: true,
-                maxlength: 255,
+                clean_text_only: true,
+                maxlength: 100,
                 messages: {
                     required: t.config.translations.required_field,
-                    maxlength: t.config.translations.max_255_characters
+                    maxlength: t.config.translations.maximum_100_characters_required,
+                    clean_text_only: t.config.translations.clean_text_only,
                 }
             });
 
@@ -274,9 +272,14 @@ var TicketTrigger = function (config) {
                                         response.msg,
                                         "success"
                                     );
+                                } else {
+                                    t.showSubmitError(response.msg);
                                 }
                             },
-                        );
+                        ).fail(function (xhr) {
+                            let response = xhr.responseJSON || {};
+                            t.showSubmitError(response.msg || response.message);
+                        });
                     }
                 });
             } else {
@@ -321,27 +324,52 @@ var TicketTrigger = function (config) {
                     $(".customOptionsHolders").append(`
                         <div class="optionElementDiv mt-3">
 
-                        <div class="col-md-12 amg-form-field amg-form-field-row gap-2">
-                            <div class="input-group">
-                            <input 
-                                type="text"
-                                name="customOptions[${elm.tax_ele_id}]"
-                                value="${elm.tax_element}"
-                                class="form-control"
-                                placeholder="${t.config.translations.add_tax}" />
+                            <div class="col-md-12 amg-form-field amg-form-field-row gap-2 custom_tax_field_error">
+                                <div class="col-md-10">
+                                    <div class="input-group">
+                                        <input 
+                                            type="text"
+                                            name="customOptions[${elm.tax_ele_id}]"
+                                            value="${elm.tax_element != null && elm.tax_element !== undefined && elm.tax_element !== 'null' ? elm.tax_element : ''}"
+                                            class="form-control customOptionInput"
+                                            placeholder="${t.config.translations.add_tax}"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                <button
+                                    type="button"
+                                    style="min-height: 40px;min-width: 40px;"
+                                    class="amg-btn amg-btn-primary amg-btn-icon-only removeOption"
+                                    title="${t.config.translations.remove}">
+                                    <i class="bi bi-dash" 
+                                    style="line-height: 10px;font-size: 26px;">
+                                    </i>
+                                </button>
+                                </div>
                             </div>
-
-                            <button type="button" style="min-height: 40px;min-width: 40px;"
-                            class="amg-btn amg-btn-primary amg-btn-icon-only removeOption"
-                            data-id="${elm.tax_ele_id}"
-                            title="${t.config.translations.remove}">
-                            <i class="bi bi-dash" style="line-height: 10px;font-size: 26px;"></i>
-                            </button>
-
-                        </div>
 
                         </div>
                     `);
+
+                    let $input = $(`input[name="customOptions[${elm.tax_ele_id}]"]`);
+
+                    // Remove any previous validation state
+                    $input.removeClass("error is-invalid");
+                    $input.removeAttr("aria-invalid");
+
+                    // Add validation rules
+                    $input.rules("add", {
+                        required: true,
+                        clean_text_only: true,
+                        maxlength: 100,
+                        messages: {
+                            required: t.config.translations.required_field,
+                            maxlength: t.config.translations.maximum_100_characters_required,
+                            clean_text_only: t.config.translations.clean_text_only,
+                        }
+                    });
                 });
 
                 new bootstrap.Modal(el.mdl[0]).show();
@@ -415,6 +443,15 @@ var TicketTrigger = function (config) {
         });
     };
 
+    t.showSubmitError = function (message) {
+        Swal.fire({
+            icon: "error",
+            title: t.config.translations.oops,
+            text: message || t.config.translations.something_went_wrong || "Something went wrong. Please try again.",
+            confirmButtonText: t.config.translations.ok,
+        });
+    };
+
     t.submit = function (e) {
         e.preventDefault();
         if (!el.mdl.frm.valid()) return;
@@ -435,7 +472,20 @@ var TicketTrigger = function (config) {
                         text: res.msg,
                         confirmButtonText: t.config.translations.ok,
                     });
+                } else {
+                    t.showSubmitError(res.msg);
                 }
+            },
+            error: function (xhr) {
+                let response = xhr.responseJSON || {};
+                let message = response.msg || response.message;
+
+                if (!message && response.errors) {
+                    let errors = Object.values(response.errors).flat();
+                    message = errors.length ? errors[0] : null;
+                }
+
+                t.showSubmitError(message);
             },
         });
     };
@@ -446,18 +496,24 @@ var TicketTrigger = function (config) {
                 required: true,
                 clean_text_only: true,
                 minlength: 2,
+                maxlength: 100,
             },
         },
         messages: {
             name: {
                 required: t.config.translations.name_required,
                 minlength: t.config.translations.minimum_2_characters_required,
+                maxlength: t.config.translations.maximum_100_characters_required,
+                clean_text_only: t.config.translations.clean_text_only,
             },
         },
         errorElement: "label",
         errorClass: "error mt-2",
         errorPlacement: function (error, element) {
+            let group = element.closest(".custom_tax_field_error");
+            if(!group.length){
             let group = element.closest(".input-group");
+            }
 
             if (group.length) {
                 error.insertAfter(group);

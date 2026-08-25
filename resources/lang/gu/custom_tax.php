@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     'title' => 'કસ્ટમ ટેક્સ',
 
     'table_fields' => [
@@ -19,11 +20,11 @@ return [
         'filtered_from' => '(કુલ _MAX_ એન્ટ્રીઓમાંથી ફિલ્ટર કરેલ)',
         'no_matching_records' => 'કોઈ મેળ ખાતો રેકોર્ડ મળ્યો નથી',
         'no_data' => 'ટેબલમાં કોઈ માહિતી ઉપલબ્ધ નથી',
-        'search' => 'શોધો...',
         'length_menu' => '_MENU_ એન્ટ્રીઓ બતાવો',
         'show' => 'બતાવો',
         'refresh' => 'રીફ્રેશ',
         'reload' => 'ફરી લોડ કરો',
+        'search' => 'શોધો...',
     ],
 
     'form' => [
@@ -74,11 +75,14 @@ return [
         'departments_fetched_successfully' => 'વિભાગો સફળતાપૂર્વક મેળવવામાં આવ્યા.',
         'delete_element' => 'શું તમે ખરેખર આ કસ્ટમ ટેક્સ તત્વને કાઢી નાખવા માંગો છો?',
         'name_required' => 'નામ આવશ્યક છે.',
+        'field_is_required' => 'આ ફીલ્ડ આવશ્યક છે.',
         'minimum_2_characters_required' => 'ઓછામાં ઓછા 2 અક્ષરો જરૂરી છે.',
+        'maximum_100_characters_required' => 'મહત્તમ 100 અક્ષરો જરૂરી છે.',
         'fail' => 'નિષ્ફળ',
         'deleted' => 'કાઢી નાખવામાં આવ્યું!',
         'oops' => 'અરે!',
         'danger' => 'ચેતવણી',
         'success' => 'સફળતા',
+        'clean_text_only' => 'ફક્ત અક્ષરો, સંખ્યાઓ અને મર્યાદિત અક્ષરોની મંજૂરી છે. HTML ટૅગ્સની મંજૂરી નથી.',
     ],
 ];

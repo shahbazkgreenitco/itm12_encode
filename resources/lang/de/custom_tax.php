@@ -20,11 +20,11 @@ return [
         'filtered_from' => '(gefiltert aus insgesamt _MAX_ Einträgen)',
         'no_matching_records' => 'Keine passenden Einträge gefunden',
         'no_data' => 'Keine Daten in der Tabelle verfügbar',
-        'search' => 'Suchen...',
         'length_menu' => '_MENU_ Einträge anzeigen',
         'show' => 'Anzeigen',
         'refresh' => 'Aktualisieren',
         'reload' => 'Neu laden',
+        'search' => 'Suchen...',
     ],
 
     'form' => [
@@ -75,11 +75,14 @@ return [
         'departments_fetched_successfully' => 'Abteilungen erfolgreich geladen.',
         'delete_element' => 'Möchten Sie dieses Element der benutzerdefinierten Steuer wirklich löschen?',
         'name_required' => 'Name ist erforderlich.',
+        'field_is_required' => 'Dieses Feld ist erforderlich.',
         'minimum_2_characters_required' => 'Mindestens 2 Zeichen erforderlich.',
+        'maximum_100_characters_required' => 'Maximal 100 Zeichen erforderlich.',
         'fail' => 'Fehler',
         'deleted' => 'Gelöscht!',
         'oops' => 'Hoppla!',
         'danger' => 'Warnung',
         'success' => 'Erfolgreich',
+        'clean_text_only' => 'Nur Buchstaben, Zahlen und bestimmte Zeichen sind zulässig. HTML-Tags sind nicht erlaubt.',
     ],
 ];
