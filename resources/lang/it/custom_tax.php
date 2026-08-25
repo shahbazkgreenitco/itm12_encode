@@ -75,6 +75,7 @@ return [
         'departments_fetched_successfully' => 'Reparti recuperati con successo.',
         'delete_element' => 'Sei sicuro di voler eliminare questo elemento della tassa personalizzata?',
         'name_required' => 'Il nome è obbligatorio.',
+        'field_is_required' => 'Questo campo è obbligatorio.',
         'minimum_2_characters_required' => 'Sono richiesti almeno 2 caratteri.',
         'maximum_100_characters_required' => 'Sono richiesti al massimo 100 caratteri.',
         'fail' => 'Errore',
