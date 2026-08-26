@@ -70,10 +70,7 @@
 
                     <div class="container-fluid py-3">
 
-                        <div class="mb-3">
-                            <h5 class="fw-semibold mb-0">{{ trans('department.form_fields_and_buttons.departments_import') }}</h5>
-                        </div>
-                        <div class="container-fluid py-5">
+                        <div class="container-fluid py-1">
                             <div class="import-wrapper">
                                 <form name="confirmForm" id="confirmForm" method="post" enctype="multipart/form-data">
                                     {{ csrf_field() }}
