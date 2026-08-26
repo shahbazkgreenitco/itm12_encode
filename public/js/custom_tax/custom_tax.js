@@ -323,7 +323,7 @@ var TicketTrigger = function (config) {
                 res.data.tax_details.forEach((elm) => {
                     $(".customOptionsHolders").append(`
                         <div class="optionElementDiv mt-3">
-
+                        //sbz custom_tax_field_error
                             <div class="col-md-12 amg-form-field amg-form-field-row gap-2 custom_tax_field_error">
                                 <div class="col-md-10">
                                     <div class="input-group">
