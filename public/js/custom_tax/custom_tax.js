@@ -342,6 +342,7 @@ var TicketTrigger = function (config) {
                                     type="button"
                                     style="min-height: 40px;min-width: 40px;"
                                     class="amg-btn amg-btn-primary amg-btn-icon-only removeOption"
+                                    data-id="${elm.tax_ele_id}"
                                     title="${t.config.translations.remove}">
                                     <i class="bi bi-dash" 
                                     style="line-height: 10px;font-size: 26px;">
